@@ -192,3 +192,68 @@ love.onmouseleave = onMouseLeave = () => {
   r.style.setProperty('--pink', 'white');
   r.style.setProperty('--fourDefaultBg', '#393631')
 }
+
+// music card1
+const subtitle1 = document.getElementsByClassName("card-subtitle1")[0];
+
+const createWord1 = (text, index) => {
+  const word = document.createElement("span");
+  
+  word.innerHTML = `${text} `;
+  
+  word.classList.add("card-subtitle-word1");
+  
+  word.style.transitionDelay = `${index * 40}ms`;
+  
+  return word;
+}
+
+const addWord1 = (text, index) => subtitle1.appendChild(createWord1(text, index));
+
+const createSubtitle1 = text => text.split(" ").map(addWord1);
+
+createSubtitle1("A song by one of our favorite artists, Keshi.");
+
+
+// music card2
+const subtitle2 = document.getElementsByClassName("card-subtitle2")[0];
+
+const createWord2 = (text, index) => {
+  const word = document.createElement("span");
+  
+  word.innerHTML = `${text} `;
+  
+  word.classList.add("card-subtitle-word2");
+  
+  word.style.transitionDelay = `${index * 40}ms`;
+  
+  return word;
+}
+
+const addWord2 = (text, index) => subtitle2.appendChild(createWord2(text, index));
+
+const createSubtitle2 = text => text.split(" ").map(addWord2);
+
+createSubtitle2("The only song we tried to play on the piano together.");
+
+
+// music card3
+const subtitle3 = document.getElementsByClassName("card-subtitle3")[0];
+
+const createWord3 = (text, index) => {
+  const word = document.createElement("span");
+  
+  word.innerHTML = `${text} `;
+  
+  word.classList.add("card-subtitle-word3");
+  
+  word.style.transitionDelay = `${index * 40}ms`;
+  
+  return word;
+}
+
+const addWord3 = (text, index) => subtitle3.appendChild(createWord3(text, index));
+
+const createSubtitle3 = text => text.split(" ").map(addWord3);
+
+createSubtitle3("The very first song in our f****** playlist.");

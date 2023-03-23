@@ -274,3 +274,18 @@ createSubtitle3("The very first song in our f****** playlist.");
   
 //   c1.style.setProperty('--c1Text', 'white');
 // }
+
+
+// modal work
+document.getElementById("mainWel").style.cursor = "pointer";
+
+document.getElementById("mainWel").addEventListener("click",function(){
+  document.getElementById("mainWel").style.display = "none";
+  document.getElementsByClassName("popup")[0].classList.add("active");
+});
+ 
+document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+  document.getElementById("mainWel").style.display = "block";
+  document.getElementsByClassName("popup")[0].classList.remove("active");
+});
+// modal work ends

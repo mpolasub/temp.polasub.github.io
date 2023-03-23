@@ -257,3 +257,20 @@ const addWord3 = (text, index) => subtitle3.appendChild(createWord3(text, index)
 const createSubtitle3 = text => text.split(" ").map(addWord3);
 
 createSubtitle3("The very first song in our f****** playlist.");
+
+
+// card1 text color change option
+
+// const cardText = document.querySelector(".card1");
+
+// cardText.onmouseenter = () => {
+// var c1 = document.querySelector(':root');
+
+//   c1.style.setProperty('--c1Text', 'black');
+// }
+
+// cardText.onmouseleave = onMouseLeave = () => {
+//   var c1 = document.querySelector(':root');
+  
+//   c1.style.setProperty('--c1Text', 'white');
+// }

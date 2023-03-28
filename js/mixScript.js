@@ -467,18 +467,7 @@ let nogoY = [];
 let nogoY2 = [];
 let prevDist = mazeWidth * 2;
 
-//tilt vars
-let lastUD = 0;
-let lastLR = 0;
-const mThreshold = 15;
-let firstMove = true;
-let allowTilt = true;
 
-//swipe vars
-const sThreshold = 15;
-
-//scroll vars
-const scThreshold = 20;
 
 //generate sides and starting position
 genSides();
@@ -852,6 +841,9 @@ function updateEmo(lr) {
 		if (thingie.offsetLeft > mazeWidth) {
 			emo.innerHTML = "";
 			home.innerHTML = "💖";
+
+			document.getElementsByClassName("popup1")[0].classList.add("active");
+
 		}
 		prevl = thingie.offsetLeft;
 	} else {
@@ -864,3 +856,12 @@ function updateEmo(lr) {
 		}
 	}
 }
+
+
+// modal work
+
+ 
+document.getElementById("dismiss-popup-btn1").addEventListener("click",function(){
+  document.getElementsByClassName("popup1")[0].classList.remove("active");
+});
+// modal work ends

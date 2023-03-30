@@ -906,7 +906,7 @@ h1 > .love > .love-text {
   padding:5px;
 }
 .popup .dismiss-btn {
-  margin-top:20px;
+  margin-top:15px;
 }
 .popup .dismiss-btn button {
   padding:10px 20px;
@@ -1235,7 +1235,7 @@ button:active {
   text-align:center;
   opacity:0;
   top:-200%;
-  transform:translate(-50%,-50%) scale(0.5);
+  transform:translate(-50%,1200%) scale(0.5);
   transition: opacity 300ms ease-in-out,
               top 1000ms ease-in-out,
               transform 1000ms ease-in-out;

@@ -863,5 +863,6 @@ function updateEmo(lr) {
  
 document.getElementById("dismiss-popup-btn1").addEventListener("click",function(){
   document.getElementsByClassName("popup1")[0].classList.remove("active");
+
 });
 // modal work ends

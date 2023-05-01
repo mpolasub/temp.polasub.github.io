@@ -1273,7 +1273,7 @@ button:active {
   padding:5px;
 }
 .popup1 .dismiss-btn1 {
-  margin-top:20px;
+  margin-top:15px;
 }
 .popup1 .dismiss-btn1 button {
   padding:10px 20px;
@@ -1313,3 +1313,19 @@ button:active {
   transition: all 300ms ease-in-out 400ms;
 }
 /* modal work ends */
+
+/* log page */
+.log {
+  background-color: rgb(37, 36, 29);
+}
+
+/* creating page references */
+#ref1 {
+  position: absolute;
+  top: 0;
+}
+
+#ref2 {
+  position: absolute;
+  top: 100%;
+}

@@ -866,3 +866,46 @@ document.getElementById("dismiss-popup-btn1").addEventListener("click",function(
 
 });
 // modal work ends
+
+
+// modal work for page menu
+document.getElementById("plus3").style.cursor = "pointer";
+
+document.getElementById("plus3").addEventListener("click",function(){
+  document.getElementsByClassName("popup2")[0].classList.add("active");
+});
+ 
+document.getElementById("dismiss-popup-btn2").addEventListener("click",function(){
+  document.getElementsByClassName("popup2")[0].classList.remove("active");
+});
+// modal work ends
+
+
+
+
+const link = document.querySelector(".myLink");
+
+link.onmouseenter = () => {
+var r1 = document.querySelector(':root');
+
+
+// Create a function for setting a variable value
+
+  r1.style.setProperty('--red1', '#fce38a');
+  r1.style.setProperty('--darkPink1', '#fc8181');
+  r1.style.setProperty('--pink1', '#ff8080');
+  r1.style.setProperty('--fourDefaultBg', 'white')
+}
+
+link.onmouseleave = onMouseLeave = () => {
+  var r1 = document.querySelector(':root');
+  
+  // r.style.setProperty('--purple', '--purpleStore');
+  // r.style.setProperty('--violet', '--violetStore');
+  // r.style.setProperty('--pink', '--pinkStore');
+  
+  r1.style.setProperty('--red1', 'white');
+  r1.style.setProperty('--darkPink1', 'white');
+  r1.style.setProperty('--pink1', 'white');
+  r1.style.setProperty('--fourDefaultBg', '#393631')
+}

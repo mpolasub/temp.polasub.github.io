@@ -59,6 +59,14 @@ h4 {
   font-family: "Space Mono", monospace;
 }
 
+h5 {
+  color: var(--col);
+  font-size: var(--sz);
+  font-family: "Space Mono", monospace;
+  transition: all 50ms ease-in-out;
+
+}
+
 h2 {
   color: white;
   font-family: "Space Mono", monospace;
@@ -108,7 +116,6 @@ h1 > .love > .love-text {
   padding-top: 30px;
 
   padding-bottom: 30px;
-  
 }
 
 .one {
@@ -252,6 +259,11 @@ h1 > .love > .love-text {
     --darkPink: rgb(255, 255, 255);
     --pink: rgb(255, 255, 255);
     --fourDefaultBg: rgb(57, 54, 49);
+
+    --pss: 4rem;
+
+    --col: rgb(255, 255, 255);
+    --sz: 5rem;
 
     --red1: rgb(255, 255, 255);
     --darkPink1: rgb(255, 255, 255);
@@ -1087,7 +1099,7 @@ h1 > .love > .love-text {
 	place-self: center center;*/
 	top: 30vh;
 	left: 50%;
-	transform: translate(-50%, 1585%);
+	transform: translate(-50%, 500vh);
 }
 
 .mbox,
@@ -1468,6 +1480,9 @@ a { text-decoration: none; border-bottom:3px solid rgb(0, 0, 0); }
   -webkit-text-fill-color: transparent;
   whitespace: nowrap;
 
+  font-size: var(--pss);
+
   border-bottom: none;
-  
+  transition: all 75ms ease-in-out;
+
 }

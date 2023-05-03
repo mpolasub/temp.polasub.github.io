@@ -895,6 +895,8 @@ var r1 = document.querySelector(':root');
   r1.style.setProperty('--darkPink1', '#fc8181');
   r1.style.setProperty('--pink1', '#ff8080');
   r1.style.setProperty('--fourDefaultBg', 'white')
+  r1.style.setProperty('--pss', '4.5rem')
+
 }
 
 link.onmouseleave = onMouseLeave = () => {
@@ -908,4 +910,67 @@ link.onmouseleave = onMouseLeave = () => {
   r1.style.setProperty('--darkPink1', 'white');
   r1.style.setProperty('--pink1', 'white');
   r1.style.setProperty('--fourDefaultBg', '#393631')
+  r1.style.setProperty('--pss', '4rem')
+
+}
+
+
+link.onmousedown = () => {
+	var r1 = document.querySelector(':root');
+	
+	// r.style.setProperty('--purple', '--purpleStore');
+	// r.style.setProperty('--violet', '--violetStore');
+	// r.style.setProperty('--pink', '--pinkStore');
+	
+	r1.style.setProperty('--red1', 'white');
+	r1.style.setProperty('--darkPink1', 'white');
+	r1.style.setProperty('--pink1', 'white');
+	r1.style.setProperty('--fourDefaultBg', '#393631')
+	r1.style.setProperty('--pss', '4rem')
+  
+  }
+
+
+
+const pls = document.querySelector("h5");
+
+pls.onmousedown = () => {
+var r2 = document.querySelector(':root');
+
+
+// Create a function for setting a variable value
+
+  r2.style.setProperty('--col', 'lightgray');
+
+}
+
+pls.onmouseup = () => {
+	var r2 = document.querySelector(':root');
+	
+	
+	// Create a function for setting a variable value
+	
+	  r2.style.setProperty('--col', 'white');
+
+}
+
+
+pls.onmouseenter = () => {
+		var r2 = document.querySelector(':root');
+		
+		
+		// Create a function for setting a variable value
+		
+		  r2.style.setProperty('--sz', '6rem');
+		
+}
+
+pls.onmouseleave = () => {
+	var r2 = document.querySelector(':root');
+	
+	
+	// Create a function for setting a variable value
+	
+	  r2.style.setProperty('--sz', '5rem');
+	
 }

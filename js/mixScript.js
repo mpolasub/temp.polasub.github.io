@@ -1,4 +1,4 @@
-
+// welcome text effect + the scroll down thing logic
 const track = document.getElementById("image-track");
 const blob = document.getElementById("blob");
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -83,7 +83,7 @@ document.querySelector("h2").onmouseout = event => {
   }, 10);
 }
 
-// for mouse pointer blob
+// mouse pointer blob logic
 document.body.onpointermove = event => {
   const { clientX, clientY } = event;
 
@@ -93,7 +93,7 @@ document.body.onpointermove = event => {
   }, { duration: 3000, fill: "forwards" });
 }
 
-// for moving track
+// img track logic
 window.onmousedown = e => {
   track.dataset.mouseDownAt = e.clientX;
 }
@@ -127,7 +127,7 @@ window.onmousemove = e => {
 
 }
 
-// side   
+// slides logic   
 
 let activeIndex = 0;
 
@@ -182,10 +182,6 @@ var r = document.querySelector(':root');
 
 love.onmouseleave = onMouseLeave = () => {
   var r = document.querySelector(':root');
-  
-  // r.style.setProperty('--purple', '--purpleStore');
-  // r.style.setProperty('--violet', '--violetStore');
-  // r.style.setProperty('--pink', '--pinkStore');
   
   r.style.setProperty('--red', 'white');
   r.style.setProperty('--darkPink', 'white');
@@ -259,7 +255,7 @@ const createSubtitle3 = text => text.split(" ").map(addWord3);
 createSubtitle3("The very first song in our f****** playlist.");
 
 
-// card1 text color change option
+// card1 text color change option (it doesnt actually work but if I ever wanna implement this i will work on it so im keeping this here lol)
 
 // const cardText = document.querySelector(".card1");
 
@@ -276,7 +272,7 @@ createSubtitle3("The very first song in our f****** playlist.");
 // }
 
 
-// modal work
+// modal work for welcome
 document.getElementById("mainWel").style.cursor = "pointer";
 
 document.getElementById("mainWel").addEventListener("click",function(){
@@ -302,7 +298,6 @@ prevBtn = content.querySelector("#prev"),
 nextBtn = content.querySelector("#next"),
 progressBar = content.querySelector(".progress-bar"),
 progressDetails = content.querySelector(".progress-details")
-// repeatBtn = content.querySelector("#repeat"),
 
 let index = 1;
 
@@ -409,10 +404,6 @@ Audio.addEventListener("timeupdate", (e)=>{
   }
   currentTimeData.innerText = currentMinutes+":"+currentSeconds;
 
-  //repeat button logic
-//   repeatBtn.addEventListener("click", ()=>{
-//     Audio.currentTime = 0;
-//   });
 });
 
 Audio.addEventListener("ended", ()=>{
@@ -445,6 +436,8 @@ document.getElementById("song3").addEventListener("click",function(){
 
 // music player ends
 
+
+// maze game logic
 const cont = document.getElementById("container");
 const maze = document.getElementById("maze");
 const thingie = document.getElementById("thingie");
@@ -466,7 +459,6 @@ let nogoX2 = [];
 let nogoY = [];
 let nogoY2 = [];
 let prevDist = mazeWidth * 2;
-
 
 
 //generate sides and starting position
@@ -858,9 +850,7 @@ function updateEmo(lr) {
 }
 
 
-// modal work
-
- 
+// modal work for game win
 document.getElementById("dismiss-popup-btn1").addEventListener("click",function(){
   document.getElementsByClassName("popup1")[0].classList.remove("active");
 
@@ -883,13 +873,11 @@ document.getElementById("dismiss-popup-btn2").addEventListener("click",function(
 
 
 
+// post it style logic
 const link = document.querySelector(".myLink");
 
 link.onmouseenter = () => {
 var r1 = document.querySelector(':root');
-
-
-// Create a function for setting a variable value
 
   r1.style.setProperty('--red1', '#fce38a');
   r1.style.setProperty('--darkPink1', '#fc8181');
@@ -901,11 +889,7 @@ var r1 = document.querySelector(':root');
 
 link.onmouseleave = onMouseLeave = () => {
   var r1 = document.querySelector(':root');
-  
-  // r.style.setProperty('--purple', '--purpleStore');
-  // r.style.setProperty('--violet', '--violetStore');
-  // r.style.setProperty('--pink', '--pinkStore');
-  
+
   r1.style.setProperty('--red1', 'white');
   r1.style.setProperty('--darkPink1', 'white');
   r1.style.setProperty('--pink1', 'white');
@@ -917,11 +901,7 @@ link.onmouseleave = onMouseLeave = () => {
 
 link.onmousedown = () => {
 	var r1 = document.querySelector(':root');
-	
-	// r.style.setProperty('--purple', '--purpleStore');
-	// r.style.setProperty('--violet', '--violetStore');
-	// r.style.setProperty('--pink', '--pinkStore');
-	
+
 	r1.style.setProperty('--red1', 'white');
 	r1.style.setProperty('--darkPink1', 'white');
 	r1.style.setProperty('--pink1', 'white');
@@ -932,45 +912,34 @@ link.onmousedown = () => {
 
 
 
+//   menu opener style logic
 const pls = document.querySelector("h5");
 
 pls.onmousedown = () => {
-var r2 = document.querySelector(':root');
+	var r2 = document.querySelector(':root');
 
-
-// Create a function for setting a variable value
-
-  r2.style.setProperty('--col', 'lightgray');
+  	r2.style.setProperty('--col', 'lightgray');
 
 }
 
 pls.onmouseup = () => {
 	var r2 = document.querySelector(':root');
 	
-	
-	// Create a function for setting a variable value
-	
-	  r2.style.setProperty('--col', 'white');
+	r2.style.setProperty('--col', 'white');
 
 }
 
 
 pls.onmouseenter = () => {
-		var r2 = document.querySelector(':root');
-		
-		
-		// Create a function for setting a variable value
-		
-		  r2.style.setProperty('--sz', '6rem');
+	var r2 = document.querySelector(':root');
+
+	r2.style.setProperty('--sz', '6rem');
 		
 }
 
 pls.onmouseleave = () => {
 	var r2 = document.querySelector(':root');
 	
-	
-	// Create a function for setting a variable value
-	
-	  r2.style.setProperty('--sz', '5rem');
+	r2.style.setProperty('--sz', '5rem');
 	
 }

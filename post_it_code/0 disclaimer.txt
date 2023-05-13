@@ -1,0 +1,11 @@
+ok so all of my files have been saved to txt files because i dont want the code to conflict with anything.
+
+here are the list of the actual file names:
+app.css
+create.php
+delete.php
+index.php
+pdo.php
+
+this site was hosted on 000webhost for free, so you wont have to worry about making payments or it disappearing.
+it's pretty nice. it also works on mobile pretty well.

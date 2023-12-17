@@ -1,3 +1,3 @@
-# temp.mpolasub.github.io
+# tempsite
 
-temporary site
+temporary personal website 

@@ -4,19 +4,54 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale">
-        <title>1 Year</title>
+        <title>mpolasub</title>
         <link rel="stylesheet" href="mixStyle.css">
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
               rel="stylesheet"  type='text/css'>
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+       
+       <!-- custom scroll bar that I gave up on (keeping this code here just in case i change my mind) -->
+        <!-- <style>
+          html::-webkit-scrollbar {
+            width: 1vw;
+          }
+          html::-webkit-scrollbar-thumb {
+            background-color: #777;
+          }
+          html::-webkit-scrollbar-track {
+            background-color: #555;
+          }
+        </style> -->
     </head>
     <body>
         <div id="blob"></div>
         <!-- <div id="blur"></div> -->
         <div class="container">
+
             <section class="one">
+              <h1 id="ref1"></h1>
+
+              <!-- modal work for welcome button -->
+              <div class="popup center">
+                <div class="icon">
+                  <i class="fa-solid fa-keyboard"></i>
+                </div>
+                <div class="title">
+                  Welcome!
+                </div>
+                <div class="description">
+                  I'm Matthew, a university student working towards a Bachelor's degree in Informatics at the University of Washington. I'm eager to create software that solves real-world problems and ready to grow as an engineer.
+                </div>
+                <div class="dismiss-btn">
+                  <button id="dismiss-popup-btn">
+                    Close
+                  </button>
+                </div>
+              </div>
+              <!-- end of modal work -->
+
                 <div id="mainWel">
-                    <h3 data-value="WELCOME">WELCOME</h3>
+                    <h3 data-value="Matthew Polasub">Matthew Polasub</h3>
                 </div>
                 <div id="corners">
                     <h2 data-value="SCROLL -vv- TO CONTINUE">scroll DOWN to continue</h2>
@@ -28,27 +63,27 @@
                     <h4>+</h4>
                 </div>
                 <div id="plus3">
-                    <h4>+</h4>
+                    <h5>+</h5>
                 </div>
                 <div id="plus4">
                     <h4>+</h4>
                 </div>
             </section>
             <section class="two">
+              <h1 id="ref2"></h1>
+                <!-- image track (just in case the id wasnt obvious enough lol) -->
                 <div id="image-track" data-mouse-down-at="0" data-prev-percentage = "0">
-                    <img class="image" src="https://lh3.googleusercontent.com/dxccGC0KdB2iNSwBNcIbNGl42nXSyU_D4CWp9xHDX-33JFEp53E7KhxlDGDWvr2858dclMhIEbapJKPmHNLpmeJ-jj0NHDTRv-qF2KmadGjBI-2wy2K21942OBNh5zAqsSwZdsX7LMsC961xRrKCY3BwOhaIyFdCmW1xejE1qr7FJLl8ylMuVyoNQttqIqDdyqohUj4lU3dxl28raQ2DbRiajUxC2J9PqMjGDJ5B1tPWxLfu6lJf0DJXgcNKwORb3myMpPONUeuRdesFQOf1BLB7sEHohd69PD8QFZa8Uz9bnlAzGW3-3EVwNBIbro_dG4nYwunNvexfmSVsabP8ij45Zo7zlH9mEi7yzQqZst2aze40e5Xf23UMD74lkTOLHWh8xNuh2Z2onZdrR7YIeMpAS1P150Sr0uRt3ZCb9T0Iq3avxSKypH9_NVWKcsx8glQUik1kA_Pj8yTwP-UAXPa7uv6CdsR-Sr-zvcVJ8WtEUz6xbVf2oZ31pCj5qihOWBlyVvDhEuzxdQ-stNSym1gbV4tu6GUEY26_8LfZ__qhbUqNql52zMCLJ3xnl4Ar7NFiZNDMSkeDiiKOmghKjKHF01MYV3m85h6lVzyrEEaQWNT5bI8aR4W8zVV6Vz_kv3rNyrf-yzQlIKufUodrGP75HhT7Uh1XwgZml5royPgi4CUFv3MIVu7oBGCk5dFTpn5ePygvvJfD5-CLnFga8Kol4s8qLAAkmLoARHp8BnRS2_Wy9tEaP7D8p7tTDoTscyr60cGOCf6Ythy4Y3hyIhpXCk6h87I9gFcnu4YoqTUlyVt8-Ns1Nage-a05Cmsa6Pq_QS-443TNLkDx9B4Wm50LGq68dZwkv01YZdcLl31lhH9jsD0v5EHDib-YzhKu81v7TafsYXjv3TeHxH0JqqMJOtdmQ_oN9CAjq7ie7sv6t9Bc3A=w1301-h1733-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/T3FCmW5R4Dvly1tyDCGYLhs8r3u2cPrDEh-YbGeyh7N6yJKnjB9Nfs-DrTXNJhEtVebHEKuOuqnNOClA2_jjnsmU2ZqPYjBb5xqw8tNyeH6uQUVoBHlPR5kUDFSxYQjc6cY0JkvpVAQ9_wVhVXLCgqNwiNiE9-ShSd37LGJ5nqpPKltm35X8VZaFB86HYNvIBp02S0Ke0QAHBwIQp7K5tiMeRZ6_AfzTEE-H7CEYgZEHPEu3VXGDrp1_xdUZPfh4hf8n-ekHp1RGbD4cUz_xnuegDaPZggB4Cq0CE3Suk1FSjXvXiU4-Pw9XqxP2iXBWVMmnTbpfsqZwoP-_BkYKbpaiXsMkpx0OLb3qkl7WoKAAzEF3M5Pkv2qUrryfISN1SFsKyvblfBqi2o1tine-uvcBBpZamtSsNIQ4z_9kp6CmUT-I7m1HB8IhCfZIB9r1PoXqgMNSruUJzIuePFQvxgY-IFvPpXd_SUYnKNbB1DzIDHhilzPBzMnG78zrZOsdn-LTd3S6NfIu3CD0s3vKJYbkk1Bcp_hoHJKK_gCD9XnbvCQNfZ6i__QYxP7mdWjjC_u_G9EHMNLoz1AkIKtsP_J3ENPV6RNCKX-eAjx74GlWTQc05Km11l3ShLYpuuIS1kM3A3at3xipNWM4RuYUilao3sry-2V3RRT3RkFoqhaKHEj1U6fU33OCXEzAIhzXtWCmhqI6Pr1lJL_AMyyxaKjebRSlc5VQespSSQwm5wzF62J8R0fJ5sELARFt8fIdZ-1hsLcCW4ZIa1e8BktD7-t1p8OrcwJ8a4NC2Xu_QS-Hbbq74StxmxMtpdEgHP3SjUAW6cn1rhvBMNPio5g56ZDWRSxMDWM4zGMHE80JjropW92yvIP1jaiVmVFC4r527Azs_MBqmwXvyaTY_OMw1H5Gz-uIK4KXbnPd2bTjGD1T7n60BA=w1711-h1461-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/KcSJ5VI91pZXkLpIxZ0pjnY8Z58YyKzxpk84C_BEo28159zHwfA3ox3MDmGm5gTQajXD5OWhK5JUjjriaL-1MD8Ocd2rMvtm68MyvSIUwMAL2TqxJDv4DISFwZpG0RigYeZFkn12f4UPwn7wTvj-FNxoMKDXwCZ_9WzZxnsGpR2rAlOV3hpOSKrpMdhD1PXlEj2yZ2oAoXgaWt6KQh5uGuDz3wdiGeMUdkSkema_fyeMWsf2ZkbeNamJ1FSaxkFhqwX7e6FyYo7FqtSDIh4jW3L7TG1JcEsTaey8ydnnkudzM0Imdx1_t-ldniMFHH-mDccS8MIhAHB-DORKNWS4y1QU-qGfPAI7wFnntdIE6pjml2QoFq3N8uGCPYj_kAhDhojOz9sANH3wMWnd7eK3-T_ntf7p65P0DMyOo8gw45t8P8F76FQ5Oyn48goPvw_KghuaK9COJzaGQmElndU_ggH77maiuztDsUAUgW_D_TRDKcjC-tvVb9mFHWq8_gvVhYCH_j4y3o6ArRHtg6QfZ_NrDIFWe4H3HgBqV-z2RKm02qWshuV4V3Kh_5KXdlaFJue-POo25kynLq0ttHC6i0m0_FmtqwqE8c4ECPz3x3Gq0BJ5eRXEPucAxDuclgTYYCWqZKOPyq-iJMeg1iDGXAES3iUF8c9q38mSwtr_RS1tzqZ8lAzLJX8o5gzfiLvVwfBEry79uvwOJwTdJQyEeaTNX9ZtZFFbeVy1iRw7mAm68vsv2TkOK8nwhhEIvl2EtXKxJiWdosMuCIcmag0COBurTYuvv28bKdESQdHsECoTHWpFGHqXRvrSeFfPL_CISrvFUknlLkWl3VIaiFMxP_HZqYWosX3qCvCWr__V6nEjLRXCdPqcwuEpCsOEROrzbEWw7gSwqNZTDuPzzAhDwjBeVBlAzN-CDzj5TIHVkOU93sjaXw=w1301-h1733-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/Ku71fWlBCNJzkmW9tqIER99gqbYtqfC5edwiJDeJDduGlLwgf5AsN2SwJ5Zl0gGHS0G_H0lZftRb7dwdHmtlLtLj2VQu2-SNSB2IhKPQ1t-UYJ8HzGNGFKvFJT8CHYWCb9PaPUFtiMhDjb1c4R5P6ePugER69Q03e3E6qjcE3lFDCCcrBtDhSM14iotCTlYdHUETerB7eJPTYEVTxuVb-KtPHwrS63rQ3wS68ngRegV0jP4yHw0--2dwuh7GyotyayMRguGVjHP5OaQ_W6Wm0tn5_c_kAoAQxE5nqGTNibKdLs8sH08o7q7DhJU30a72FoCU38wKEN95yiqHxIEhQ14RENdvcs9j5xtFPXLJUF9mbh73q9KRQQ4wdlEx9z_8y4L7hCGK-UauoZhSzfql72QrDM1ArjHHJSLA975fUNOHkxGxSdzY0P8r8uA-bKsKnYJu0hCD58BJZ3tLqFYbSV2yW2mWRUaa9vPsi0qRqgP1g5A_vIqrrE678YBdC7Q04hDPwIx-0cUoGN8qRemRkgVYWxXYKyTApLqLvRAsPGJcVQ1UsxrAuj_FFYUPT_m_buczuN0TK5ou8nzzoO5f8M6R12v14SEVIuVb2DLu4RU0SlYV6t2MLdRQ-y0xAG8aCbVG55_UOqB3MIiHiuvCn6EFSvlKFq6hvPDta05cyZKODCnwZCiwr0uG-UverD2v3eow-DmYyp-1g1ivNkzoLW32-sMT0fwiTgqozxCKlVy2t7y8YRFtDhGaW-RROvlBGs7rFl_Uh4hof4ZPltkk6QKe2OwQ52mOe33OyScYkcRvEZnuHffR3b1tN0k7apyJGE3q9UVIdw_CpdoUMPlDoKFQHCvHPDwHYY-e6jhyFkQ68On7uSG_-zSMkw8-1_xwEWTyYTiT7SaV1eDgX5FqwfDnp_ZTmfozj9vGVkH12C3YuBXJ=w828-h620-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/hrladPxjvRmjijzxmUXpqEXNDYYMfBYl0VPyIYBhJ796osbJ7_1c7p-TT0LL0FPItVy5zpa4oNDvNqIrImlI_Kog5thjAmzVCwoi7H3Uo4rbEITKzmX5E19nNJoRHQRYmTY-icia_u2Cz1ALIltpHrU0e2NAcVR6ZCzWokKkQPlpZxP1O6Cw0enWjL_EDX_I5sp1C6vGeKF7PN4fET8ou4-frisTIhrK5TG5WOIwfUR1m5fo2_9k5c383jFFZ1Wdtmj1hSiA2KFO-jWW4qAoW--ypKtPGoHf4Lf_jT7w4UiU1nDtqwvv7p4fZUo7EqP2F9kN1eE6t6BdFTxF3gmHxWvkwR5UkywCXMjBXXVwrOR2_znoy0bzPHfEJrc36YzWMwNXMudtWyLdUQO9Ll8DeP9BglsldavyR3aYGbaILkVTz6sx7ECJRLmVTYltW8SjWKkOu5weKy9piNX8QrriBEOWUd326kffbIiMx21UyIAhaWDL6_J5KEuqazTxMhP0T9vfkgjcEF0cbqCv-NfR4JFTKqqxxhJ7M8xvDFkbDAF55k8Hej5T35hy3HP7SQ9FjN-HjineYNOKAVTWgyDWdQ9ty_9Ny8wMrDsEkj7_sVCDkL4GhwkACPXImgedeqy0sIu3Z0omfCPICEreRmTeqp3illK_ZlRF5v1uZqxt2RVD4JVpP0BWj9BN0NjNR0YX89lubsajTGqEBMJ0XDaGT8J4FnNXr9BxhYwWjgDxmjRP5mc1y6GVnH7IYlmOqepIIJhLqgeh-5JhgtqlYuUDshymTRmXkGqL-vUnpdXVjBkZPADvd75z1VM6wtaZp-tJ8CxMmOb3_AHoUpLyr6CQXbQWz5hca2jxrZSKTCIhE0YS4q4jnXYfd2lvHwsOd4FmVawDTJTi3LzyXMgS8dSOhWKPxkz9UJaqH4YTpq-jyEgRcNyWeA=w1301-h1733-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/ZZhS6f-0KGdQHgwstMllI7yF1iUiaS4kiHMsQVw1cdzrg4LVLAyq-lGHJSsdg13rdXmzNTmhkZo7mXQ0HTB-7k9sxSQIgxwF0QUBOh2N14Vxkle5l0G73klwnYzRrhUSSpaRgVMae8FSnpCqGxR1CluhnhApfuopF6Ab7jHNnTJuTezBWE6xlX9x5lI8Zojl4K8QSJy1BqeE9HL8ak3aO8QtziWruYnyra9qvcFXUrL2bMRY132t-28PG8LTVRJ9xZQZfrVrrIlk1oaVSKMYW6iMTvIE0z6TLOJvMlC24yMQ0dHsTlobDxCPKt4t7Q7WuFUG1GzAvo6Wx6c7nK-6H9Z1ayuzGaYgNqQgYFmW1ADZavt4ofSzV6CQRr43x02XbuspsrZn1uMqCkkiYMuKODKjBY5LPBN73SRfWXVAy-QJ5QtLaaD1uU3oIrbKl8qPMgOjaFfz-rvTvWSdGDaMCBeslSyCIeHOLYL7YIfh-elFhl6rIfTBzwoIAaZldXM1vixBYo-cha7W6niyx7CSxzLjgHbw6KVXJS3E9DJ1yI3NPDZitDQLbcdmoALwTJT91uh6RS7D0t8nXadgujRjqVYnzL-SC5dBTVMJh12N9rJ7_o0nylH79AJB2-WWGAU2wEahvQtAXOupGRVEFYLn_QoP52_bLtTuM8VnuLw3ZrsvmdxS0Tg4CN8K2oeZGbXEgfLtIFgbX73n9BqxpXzM9Ghf_d8VvQ6KeUK6DwWQ115G3RzEoRSeFnoyCczAO2cCYTaceCEaerg2CHDtsFEP97QYfOu3JZ8H2riSK0FC2e-7XvFAipX0t7NyYCw9I6X3fKz1XVxnNfaTz5gvXHe7XTqWwSt4shdCniuLGXnuSeIpIGjVkgdvWBq9x-ivJZUL7qOG4DyiUuqEy3cBvPha7ddI0gxUTwL1U5hHiEo1U0-fvWJeDQ=w2140-h1605-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/3fYkkZPQdKrV-Cm4tep9HswbAwLuRrGeGXoahYhn5EHEt1lO3-E0tTFc64EdSsSGEQUPl3B6qYjO368UiqbD3KN5DQhshvmUigntx6hcFZjLrSHEsXt2HA5GY8u4Lbp3JYaDOHMMtR0al8Gl3W3dSgLKtpGgYrc79efeFcIPn1Z6-V7onEwkhpSUrdcjKnUMaHgLpax6-_2kZmcMlLZVzIGLjRMEMjAgdNbNHmF5osIKK4zdidB9tM0OVlus-JqPekSqlVBFcQ7c9edDxA126VZW1yQXaWypBzwN14tz-iMzyQPQuD7KtbQOickTT59h0rs4WGZQB9hB02LWxUueGWzKyKjbATBJxh6HFhz4mdkRFmv-75aPqW7OIqYtzdLozbq-iTWKX_nOH740NKUHsmPALdjOXP5gTej5aSTfuwtfUSL5G3OKf6YDo76cAR1w4N3jpj4biK7ePLDYnXZ2j6gvsokYJgWzFgi2iywc5-MIsZaSEyx21pTaS5pQlivCWiwPvomGuuWlUYw17na9LpZjxVn8pJtIJS3j4Fk2vXEeo_GpdxeQzjjLF0nFCox0ZSzvYp-yGb1H55AnWolkLHycij33cFDAX5R4lP0ukQYR5JqDEA7bBcvUOv0neWqc0LOe8BDYurzLkFX3lOr5bEAEyZiylMLppFm7zWzDHyu71y8mCdoeh7DmFRh_4LMlZr76nW_8iauzaWUnFERBZx2mauUDAdg7R1xeUcCvJL5rwlbZktPW7p4KQEExjKcpaxRMRXj83D2JTUsXHDBpH6eN_9nSUjcsi_IKsMVz768pZDp2rli05ti8AKBy8SbFCWaVZ9kzrueqblmA3q8xU4ZvvgJ7MyKzzx1gH4FmFmEk6SYpWNTBd8W2B_pcPKPhTwhpPlM7T8fH4zCPG4VsBF7sbAaOzbRV1o2aj3nNrFUTeD2a1Q=w1301-h1733-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/XkGOPCsA-J6f0MD1muE4LQNPHYS7KozAHdx9QHgoZ5y3D5JpU4qyrfC9aMjdnCILD3bXF1UBtkiNj1og42kpT3NWaoftznRz0QVl24MgoHb8mYOfmDTZVFIFSCvskEWG1kULv5NzeL4OXUnSVWh8j7lGBAEORbh1Yw_jAfi6LAzhGPrsoQM1ORhqmjI2Uaf2qiqp87qwtVZqGJM4Egorzo0YbdubuRoEuLJy7SOMsjr83DycJgGlSW7P0QpL-DfYEBralDbVhF8M18SX-uTJM8VN43NaXWc0Ts72i4s76SPteET_0vQULg-vKJBZy6Hjm-IrujuWN3Zcjha179xuisjBrt29QORBjy5bKq6zSlj24I0ssYIsYEI2hpaHhaN7umuy0IYUB5tNrP5JlaaiHi4wwdHiENJFIvTZFZBEC1PW8X6tAvMHpaQCLI3sU0WwZ-AbLP37O_FZbMSqRgaRKy4hxLzMnY7UxP_1mdcI4AJCgDKQicJg02K-n36QlQ9uxbCJSHmU_iwJijw7GILvCry1Mby4UD4hl2Q__jYR4Hsgp6T8_pLR7t6pMzSuAb68CPqMzVCAAIJV4OdxbnXC9gUq78sgMGn8BTNwlLqXA1n_X22MI75QIY5wExBsEcgatxXCt7CZPJOZ-LlqGEus6xmMzJ6FFkjhJq-SSOiroqbdprGhCg-YL9jEHkEYbwbzVW2ufMMOrlzrS20sGB_wlSxTkvmbwvMaSCreW2itUt8OwMGjfuGlGQpLzG2kKbWYNjlJkWS5E9uy0Vk4oQgJPRb2UeGb-yxWil0zxyJU_2-CW9eYpQX7bFxeFB1uI2-CB-YaSdJGGWm7zjBTiR4fVPU6IPw6bmwTuMn_UvxMkzfnD_A2yRr4g49x332qVdU-g2n-X2MpWVeRWpnrXMk4LIiPQfOsZsWhaDFla43IUvgLxepdEQ=w2192-h1320-no?authuser=0" draggable="false" />
-                    <img class="image" src="https://lh3.googleusercontent.com/K9lSOlteVIHB9S2cjYVwQxif2atGpNn5tf43tPi-5M1vZ2ot21GI8s2YglRHye7hwvFQsaJZBsLbT7SYIFUgnoAJW3_rJvkEb-7IGCYP-9ylkYYdUvP8T1aC8zw_4TNUstt7oCh_ZRCydVSVh_TbKHG22elxtHXDGJ7vjfs4M5vXwvm5WgWaOCpH9BKnx_EJRjkcYvbwuUANICyQperqeRAhDgcmF7bK96Vnsiq26SgA-2wXgGJAv6ITW45DxIajlXG6uOnosFJuZvZb_Ioxmm36V78hDALRF2i69h3ksP2b04ZA3jcLo46iII_sCKbt3YTWUyAMricdPnnGjpHS7Dt8SIBb7RfiagGaHEJcovo0e8K2Yt3AM-HKZhAGgriZNNfg3tFggW2Wx6pVR1fHWMp-UYkC6CFI3YnJj4KuUv0rvk7C6UM2gye9sqVI6pWj-pl8Jyx5O4cOl3GtzRXfx2evnZzXDWrVzqLPtwI_RBJlbBbOdqJNA4Sqwe8B1FVqPr4pV_HwQmHQav-lD6rNA-2kOXzoG8TlaqZWOWxhgRNBjfNt4LFtda6AOeXhUm66jN24d94U7yzvmmRwPaMrn0bGEp71omA-lOeSwqHZ3ASkELESHK28eIhMicGiv8KE6T3zZh6EdDlFC9A9zPPj8W9Actp5jUKkGdQWE8pnRA_Ndj_IzpQlR5xrRgaX6SlOfcTDCLOYbDWsKFpCE6AmKn2YxGCOXFeMt36VPm3b88VQAVUzOw1gSVKFaJ_s1Uw37MccpuVeaO7eokWAd2lwgv_N53Ta9i62uiymwLeVXZDfX23K-wY4o2ZsSKDNAvAg1y51T6HRz8uTBP-vQxFof9mSgJhXZHDvzCNzShB2Y0Y9oGLR3_B4no00OXaMVfw5VGLJPb6HaFUWjUyS9CjTYI5GRkm9AFWHwr-qfnwYkU2ITOuu7g=w1301-h1733-no?authuser=0" draggable="false" />
+                    <img class="image" src="images\CULK7thFl.jpg" draggable="false" />
+                    <img class="image" src="images\chism1.jpg" draggable="false" />
+                    <img class="image" src="images\wagayaDango.jpg" draggable="false" />
+                    <img class="image" src="images\chism2.jpg" draggable="false" />
+                    <img class="image" src="images\yellowEsc.jpg" draggable="false" />
+                    <img class="image" src="images\blueBerSunrise1.jpg" draggable="false" />
+                    <img class="image" src="images\iceMons.jpg" draggable="false" />
+                    <img class="image" src="images\blueBerSunrise2.jpg" draggable="false" />
+                    <img class="image" src="images\libraryLights.jpg" draggable="false" />
                 </div>
-                <!-- <div id="dragInst">
-                    <h5>CLICK AND DRAG TO VIEW MORE IMAGES</h5>
-                </div> -->
+
                 <div id="plus1">
                     <h4>-</h4>
                 </div>
@@ -61,24 +96,86 @@
                 <div id="plus4">
                     <h4>-</h4>
                 </div>
-                <!-- add "click and drag to view more images" to --------------------------------->
             </section>
+
+
             <section class="three">
+              <h1 id="ref3"></h1>
                 <div id="plus1">
-                    <h4>1</h4>
+                    <h4>+</h4>
                 </div>
                 <div id="plus2">
-                    <h4>1</h4>
+                    <h4>+</h4>
                 </div>
                 <div id="plus3">
-                    <h4>1</h4>
+                    <h4>+</h4>
                 </div>
                 <div id="plus4">
-                    <h4>1</h4>
+                    <h4>+</h4>
                 </div>
-                <h1>First page</h1>
+
+                <!-- music cards -->
+                <div id="song1">
+                  <div class="card1">
+                    <div class="card-content1">
+                      <h6 class="card-title1">B.Y.S.</h6>
+                      <h4 class="card-subtitle1"></h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="song2">
+                  <div class="card2">
+                    <div class="card-content2">
+                      <h6 class="card-title2">Spring Day</h6>
+                      <h4 class="card-subtitle2"></h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="song3">
+                  <div class="card3">
+                    <div class="card-content3">
+                      <h6 class="card-title3">By My Side</h6>
+                      <h4 class="card-subtitle3"></h4>
+                    </div>
+                  </div>  
+                </div>
+
+                <!-- music player fr -->
+                <div class="content">
+                  <div class="image-wrapper">
+                    <div class="music-image">
+                      <img src="images/bys.jpg">
+                    </div>
+                  </div>
+                  <div class="music-titles">
+                    <p class="name">B.Y.S.</p>
+                    <p class="artist">Keshi</p>
+                  </div>
+                  <div class="progress-details">
+                    <div class="progress-bar">
+                      <span></span>
+                    </div>
+                    <div class="time">
+                      <span class="current">0:00</span>
+                      <span class="final">2:46</span>
+                    </div>
+                  </div>
+                  <div class="control-btn">
+                    <span class="material-symbols-rounded" id="prev">skip_previous</span>
+                    <div class="play-pause">
+                      <span class="material-symbols-rounded">play_arrow</span>
+                    </div>
+                    <span class="material-symbols-rounded" id="next">skip_next</span>
+                  </div>
+                </div>
+                <!-- end music player -->
             </section>
+
+
             <section class="four">
+              <h1 id="ref4"></h1>
                 <div id="plus1">
                   <h4>-</h4>
                     <!-- <h4><i class="fa-sharp fa-regular fa-heart"></i></h4> -->
@@ -100,19 +197,26 @@
                   <span class="love">
                     <span class="love-text">I</span>
                   </span>
-                  learned <br>about our
+                  learned 
+                  <br>about our
                   <span class="love">
                     <span class="love-text">love</span>
                   </span>
-                  , it's that we <br>spark each other's growth. <br>And even though 
+                  , it's that we 
+                  <br>spark each other's growth. 
+                  <br>And as valuable as that may 
+                  <br>be to me, that isn't the only
+                  <br> reason I'm so drawn towards
                   <span class="love">
-                    <span class="love-text">you</span>
+                    <span class="love-text">you.</span>
                   </span>
-                  are <br>one of the most beautiful<br> people I've met, that isn't the <br>only reason I'm so drawn towards <br>you. Here are my personal <br>favorite reasons as to why
+                   <br> Here are my personal 
+                   <br>favorite reasons as to why
                   <span class="activation">[...]</span>
                 </h1>
             </section>
             <section class="side">
+              <h1 id="ref5"></h1>
                 <main>
                     <article data-index="0" data-status="active">
                     <!-- image section -->
@@ -139,13 +243,14 @@
                       </div>
                     </article>
             
-            
                     <article data-index="1" data-status="inactive">    
                     <!-- image section -->
                       <div class="article-image-section article-section"></div>
                     <!-- article description -->
                       <div class="article-description-section article-section">
-                        <p>A place where books hang out waiting to be grabbed. But don't be too grabby now, ya hear.</p>
+                        <p>
+                          Seeing you put so much care into your work inspires me to be an even better version of myself. I really like how you took into account your handwriting when you take notes (they're very pretty), it shows how meticulous you are when it comes to your work. Also, I will always be impressed with how you can run on very little sleep and still study all day. 
+                        </p>
                       </div>
                     <!-- title -->
                       <div class="article-title-section article-section">
@@ -163,13 +268,14 @@
                       </div>
                     </article>
             
-            
                     <article data-index="2" data-status="inactive">    
                     <!-- image section -->
                       <div class="article-image-section article-section"></div>
                     <!-- article description -->
                       <div class="article-description-section article-section">
-                        <p>The neatest lighthouse you ever saw. Ehh, actually it's kind of messy. But that's why the pic is of the outside.</p>
+                        <p>
+                          I know that I will always enjoy spending time with you no matter what we do. Target runs, grocery shopping, scooter riding, anything becomes enjoyable when I do it with you. We can make things that are seemingly weird and dumb to others exciting to us. I still think about that time we both drifted off from our prom group to catch bugs for our corsage box. That was pretty funny. Also, you're an incredible gift maker.
+                        </p>
                       </div>
                     <!-- title -->
                       <div class="article-title-section article-section">
@@ -187,14 +293,13 @@
                       </div>
                     </article>
             
-            
                     <article data-index="3" data-status="inactive">    
                     <!-- image section -->
                       <div class="article-image-section article-section"></div>
                     <!-- article description -->
                       <div class="article-description-section article-section">
                         <p>
-                          The blobiest of blobs nestled deep in the heart of outer space. Well, technically the universe is both infinite and homogeneous so there isn't really a heart, per se.
+                          I love how we can connect over anything talk about anything. Our natural chemistry is just that strong. And beyond that, we share a similar mindset of constant progression; we work out together, read together, motivate each other, and care for each other. Although we are bound to experience rocky moments, we will always find a way to resolve them together in the end. It's because there is not a single woman out there that can fit me better than you. 
                         </p>
                       </div>
                     <!-- title -->
@@ -212,12 +317,50 @@
                         </button>
                       </div>
                     </article>
-            
                   </main>
+            </section>
+
+            <section class="six">
+
+            </section>
+
+            <section class="log">
+              <!-- post it page -->
+              <h1 id="ref7"></h1>
+
+              <h6>
+                <a href="https://rfmpnotes.000webhostapp.com/index.html" class="myLink">Post-It!</a>
+              </h6>
+
+              <div id="plus1">
+                <div class="myLink">
+                  <h4>+</h4>
+                </div>
+              </div>
+              <div id="plus2">
+                <div class="myLink">
+                  <h4>+</h4>
+                </div>
+              </div>
+              <div id="plus3">
+                <div class="myLink">
+                  <h4>+</h4>
+                </div>
+              </div>
+              <div id="plus4">
+                <div class="myLink">
+                  <h4>+</h4>
+                </div>
+              </div>
+              
+
             </section>
         </div>
 
-        <script src="mixScript.js"></script>
+        <audio src="music/bys.mp3" class="main-song"></audio>
+
+        <script src="js/mixScript.js"></script>
+        <script src="js/playlist.js"></script>
         <script src="https://kit.fontawesome.com/f6dbb55ca3.js" crossorigin="anonymous"></script>
     </body>
 </html>

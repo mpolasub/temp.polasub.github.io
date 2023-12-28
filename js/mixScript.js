@@ -215,7 +215,7 @@ const addWord1 = (text, index) => subtitle1.appendChild(createWord1(text, index)
 
 const createSubtitle1 = text => text.split(" ").map(addWord1);
 
-createSubtitle1("A song by one of our favorite artists, Keshi.");
+createSubtitle1("Java\n Python\n HTML\n    CSS\n JavaScript\n R     \nEnglish");
 
 
 // music card2
@@ -237,7 +237,7 @@ const addWord2 = (text, index) => subtitle2.appendChild(createWord2(text, index)
 
 const createSubtitle2 = text => text.split(" ").map(addWord2);
 
-createSubtitle2("The only song we tried to play on the piano together.");
+createSubtitle2("Firebase\n Git\n    GitHub\n Flask\n   JUnit\n    SQLite\n AWS");
 
 
 // music card3
@@ -259,7 +259,7 @@ const addWord3 = (text, index) => subtitle3.appendChild(createWord3(text, index)
 
 const createSubtitle3 = text => text.split(" ").map(addWord3);
 
-createSubtitle3("The very first song in our f****** playlist.");
+createSubtitle3("Snowboarding\n Guitar\n Drums\n Mechanical- Keyboards\n Reading");
 
 
 // card1 text color change option (it doesnt actually work but if I ever wanna implement this i will work on it so im keeping this here lol)
@@ -300,21 +300,25 @@ document.getElementById("dismiss-popup-btn").addEventListener("click",function()
 
 
 
-// post it style logic
+// github style
 const link = document.querySelector(".myLink");
 
 link.onmouseenter = () => {
 var r1 = document.querySelector(':root');
 
 //   sunset variation
-  r1.style.setProperty('--red1', '#fce38a');
-  r1.style.setProperty('--darkPink1', '#fc8181');
-  r1.style.setProperty('--pink1', '#ff8080');
+  // r1.style.setProperty('--red1', '#fce38a');
+  // r1.style.setProperty('--darkPink1', '#fc8181');
+  // r1.style.setProperty('--pink1', '#ff8080');
 
 // default variation
-// r1.style.setProperty('--red1', 'white');
-// r1.style.setProperty('--darkPink1', 'aquamarine');
-// r1.style.setProperty('--pink1', 'mediumpurple');
+r1.style.setProperty('--red1', 'mediumpurple');
+r1.style.setProperty('--darkPink1', 'white');
+r1.style.setProperty('--pink1', 'mediumslateblue');
+
+r1.style.setProperty('--pc1', 'mediumpurple');
+r1.style.setProperty('--pc2', 'white');
+r1.style.setProperty('--pc3', 'mediumslateblue');
 
   r1.style.setProperty('--fourDefaultBg', 'white')
   r1.style.setProperty('--pss', '4.5rem')
@@ -327,6 +331,11 @@ link.onmouseleave = onMouseLeave = () => {
   r1.style.setProperty('--red1', 'white');
   r1.style.setProperty('--darkPink1', 'white');
   r1.style.setProperty('--pink1', 'white');
+
+  r1.style.setProperty('--pc1', 'white');
+  r1.style.setProperty('--pc2', 'white');
+  r1.style.setProperty('--pc3', 'white');
+
   r1.style.setProperty('--fourDefaultBg', '#393631')
   r1.style.setProperty('--pss', '4rem')
 
@@ -339,41 +348,134 @@ link.onmousedown = () => {
 	r1.style.setProperty('--red1', 'white');
 	r1.style.setProperty('--darkPink1', 'white');
 	r1.style.setProperty('--pink1', 'white');
+
+  r1.style.setProperty('--pc1', 'white');
+  r1.style.setProperty('--pc2', 'white');
+  r1.style.setProperty('--pc3', 'white');
+
 	r1.style.setProperty('--fourDefaultBg', '#393631')
 	r1.style.setProperty('--pss', '4rem')
   
   }
 
 
+  // linkedin style
 
-//   menu opener style logic
-const pls = document.querySelector("h5");
+  const link1 = document.querySelector(".myLink1");
 
-pls.onmousedown = () => {
-	var r2 = document.querySelector(':root');
+  link1.onmouseenter = () => {
+  var r2 = document.querySelector(':root');
+  
+  //   sunset variation
+    // r2.style.setProperty('--red1', '#fce38a');
+    // r2.style.setProperty('--darkPink1', '#fc8181');
+    // r2.style.setProperty('--pink1', '#ff8080');
+  
+    // default variation
+    r2.style.setProperty('--white1', 'white');
+    r2.style.setProperty('--lightBlue1', '#00A0DC');
+    r2.style.setProperty('--blue1', '#0077B5');
 
-  	r2.style.setProperty('--col', 'lightgray');
+    r2.style.setProperty('--pc1', 'white');
+    r2.style.setProperty('--pc2', '#00A0DC');
+    r2.style.setProperty('--pc3', '#0077B5');
+  
+    r2.style.setProperty('--fourDefaultBg', 'white')
+    r2.style.setProperty('--pss1', '4.5rem')
+  
+  }
+  
+  link1.onmouseleave = onMouseLeave = () => {
+    var r2 = document.querySelector(':root');
+  
+    r2.style.setProperty('--white1', 'white');
+    r2.style.setProperty('--lightBlue1', 'white');
+    r2.style.setProperty('--blue1', 'white');
 
-}
+    r2.style.setProperty('--pc1', 'white');
+    r2.style.setProperty('--pc2', 'white');
+    r2.style.setProperty('--pc3', 'white');
 
-pls.onmouseup = () => {
-	var r2 = document.querySelector(':root');
-	
-	r2.style.setProperty('--col', 'white');
+    r2.style.setProperty('--fourDefaultBg', '#393631')
+    r2.style.setProperty('--pss1', '4rem')
+  
+  }
+  
+  
+  link1.onmousedown = () => {
+    var r2 = document.querySelector(':root');
+  
+    r2.style.setProperty('--white1', 'white');
+    r2.style.setProperty('--lightBlue1', 'white');
+    r2.style.setProperty('--blue1', 'white');
 
-}
+    r2.style.setProperty('--pc1', 'white');
+    r2.style.setProperty('--pc2', 'white');
+    r2.style.setProperty('--pc3', 'white');
+
+    r2.style.setProperty('--fourDefaultBg', '#393631')
+    r2.style.setProperty('--pss1', '4rem')
+    
+    }
+  
 
 
-pls.onmouseenter = () => {
-	var r2 = document.querySelector(':root');
+    // email style
 
-	r2.style.setProperty('--sz', '6rem');
-		
-}
+    const link2 = document.querySelector(".myLink2");
 
-pls.onmouseleave = () => {
-	var r2 = document.querySelector(':root');
-	
-	r2.style.setProperty('--sz', '5rem');
-	
-}
+    link2.onmouseenter = () => {
+    var r3 = document.querySelector(':root');
+    
+    //   sunset variation
+      // r3.style.setProperty('--red1', '#fce38a');
+      // r3.style.setProperty('--darkPink1', '#fc8181');
+      // r3.style.setProperty('--pink1', '#ff8080');
+    
+      // default variation
+      r3.style.setProperty('--white2', 'white');
+      r3.style.setProperty('--lightRed1', '#D44638');
+      r3.style.setProperty('--realRed1', '#B23121');
+  
+      r3.style.setProperty('--pc1', 'white');
+      r3.style.setProperty('--pc2', '#D44638');
+      r3.style.setProperty('--pc3', '#B23121');
+    
+      r3.style.setProperty('--fourDefaultBg', 'white')
+      r3.style.setProperty('--pss2', '4.5rem')
+    
+    }
+    
+    link2.onmouseleave = onMouseLeave = () => {
+      var r3 = document.querySelector(':root');
+    
+      r3.style.setProperty('--white2', 'white');
+      r3.style.setProperty('--lightRed1', 'white');
+      r3.style.setProperty('--realRed1', 'white');
+  
+      r3.style.setProperty('--pc1', 'white');
+      r3.style.setProperty('--pc2', 'white');
+      r3.style.setProperty('--pc3', 'white');
+  
+      r3.style.setProperty('--fourDefaultBg', '#393631')
+      r3.style.setProperty('--pss2', '4rem')
+    
+    }
+    
+    
+    link2.onmousedown = () => {
+      var r3 = document.querySelector(':root');
+    
+      r2.style.setProperty('--white2', 'white');
+      r2.style.setProperty('--lightRed1', 'white');
+      r2.style.setProperty('--realRed1', 'white');
+  
+      r3.style.setProperty('--pc1', 'white');
+      r3.style.setProperty('--pc2', 'white');
+      r3.style.setProperty('--pc3', 'white');
+  
+      r3.style.setProperty('--fourDefaultBg', '#393631')
+      r3.style.setProperty('--pss2', '4rem')
+      
+      }
+    

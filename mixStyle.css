@@ -195,7 +195,7 @@ background-color: rgb(37, 36, 29);
 /* for mouse pointer blob */
 #blob {
   background-color: white;
-  height: 500px;
+  height: 75%;
   aspect-ratio: 1;
   position: absolute;
   left: 50%;
@@ -240,6 +240,8 @@ background-color: rgb(37, 36, 29);
   --fourDefaultBg: rgb(57, 54, 49);
 
   --pss: 4rem;
+  --pss1: 4rem;
+  --pss2: 4rem;
 
   --col: rgb(255, 255, 255);
   --sz: 5rem;
@@ -247,6 +249,18 @@ background-color: rgb(37, 36, 29);
   --red1: rgb(255, 255, 255);
   --darkPink1: rgb(255, 255, 255);
   --pink1: rgb(255, 255, 255);
+
+  --white1:rgb(255, 255, 255);
+  --lightBlue1:rgb(255, 255, 255);
+  --blue1:rgb(255, 255, 255);
+  
+  --white2:rgb(255, 255, 255);
+  --lightRed1:rgb(255, 255, 255);
+  --realRed1:rgb(255, 255, 255);
+
+  --pc1:rgb(255, 255, 255);
+  --pc2:rgb(255, 255, 255);
+  --pc3:rgb(255, 255, 255);
 
   --border: rgb(161, 161, 161);
 
@@ -554,11 +568,9 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 .card1 {
   aspect-ratio: 1 / 1.6;
   border: 0.5vmin solid var(--border);
-  cursor: pointer;
   position: relative;
   width: 32vmin;
   transform: translateX(-15%);
-
 }
 
 
@@ -586,9 +598,9 @@ background: linear-gradient(
   130deg, 
   transparent 0% 33%, 
 
-  rgb(241, 211, 177) 66%, 
-  rgb(221, 149, 51) 83.5%, 
-  rgb(40, 40, 40) 100%
+  rgb(145, 17, 17) 66%, 
+  rgb(192, 104, 104) 83.5%, 
+  rgb(172, 172, 172) 100%
   );
 background-position: 0% 0%;
 background-size: 300% 300%;
@@ -650,7 +662,6 @@ transition: none;
 .card2 {
 aspect-ratio: 1 / 1.6;
 border: 0.5vmin solid var(--border);
-cursor: pointer;
 position: relative;
 width: 32vmin;
 transform: translateX(-10%);
@@ -679,9 +690,9 @@ transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
 background: linear-gradient(
   130deg, 
   transparent 0% 33%, 
-  turquoise 66%, 
-  rgb(159, 220, 227) 83.5%, 
-  rgb(174, 174, 159) 100%
+  rgb(74, 57, 83) 66%, 
+  rgb(158, 108, 216) 83.5%, 
+  rgb(184, 184, 184) 100%
 );
 background-position: 0% 0%;
 background-size: 300% 300%;
@@ -743,7 +754,6 @@ transition: none;
 .card3 {
 aspect-ratio: 1 / 1.6;
 border: 0.5vmin solid var(--border);
-cursor: pointer;
 position: relative;
 width: 32vmin;
 transform: translateX(-5%);
@@ -772,9 +782,12 @@ transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
 background: linear-gradient(
   130deg, 
   transparent 0% 33%, 
-  rgb(125, 91, 73) 66%, 
-  rgb(195, 190, 169) 83.5%, 
-  rgb(235, 238, 227)100%
+  rgb(44, 62, 122) 66%, 
+  rgb(91, 114, 180) 83.5%, 
+  rgb(155, 155, 155)100%
+  /* rgb(226, 70, 70) 66%, 
+  rgb(223, 127, 127) 83.5%, 
+  rgb(255, 255, 255)100% */
 );
 background-position: 0% 0%;
 background-size: 300% 300%;
@@ -869,7 +882,7 @@ border:3px solid #f5f5f5;
 text-align:center;
 display:inline-block;
 border-radius:50%;
-line-height:60px;
+line-height:50px;
 }
 .popup .icon i.fa-solid {
 font-size:30px;
@@ -877,13 +890,13 @@ color:#464646;
 } 
 .popup .title {
 margin:5px 0px;
-font-size:30px;
+font-size:3rem;
 font-weight:600;
 color:rgb(116, 175, 180);
 }
 .popup .description {
 color:#222;
-font-size:15px;
+font-size:1.25rem;
 font-weight: bold;
 padding:5px;
 }
@@ -1420,7 +1433,7 @@ transition: all 300ms ease-in-out 400ms;
 
 a { text-decoration: none; border-bottom:3px solid rgb(0, 0, 0); }
 
-/* post it style */
+/* github style */
 .myLink {
 font-weight: 700;
 animation: background-pan 2s linear infinite;
@@ -1442,3 +1455,73 @@ border-bottom: none;
 transition: all 75ms ease-in-out;
 
 }
+
+
+/* linkedin style */
+.myLink1 {
+  font-weight: 700;
+  animation: background-pan 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--white1),
+    var(--lightBlue1),
+    var(--blue1),
+    var(--white1)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  whitespace: nowrap;
+  
+  font-size: var(--pss1);
+  
+  border-bottom: none;
+  transition: all 75ms ease-in-out;
+  
+  }
+
+
+  /* email style */
+.myLink2 {
+  font-weight: 700;
+  animation: background-pan 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--white2),
+    var(--lightRed1),
+    var(--realRed1),
+    var(--white2)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  whitespace: nowrap;
+  
+  font-size: var(--pss2);
+  
+  border-bottom: none;
+  transition: all 75ms ease-in-out;
+  
+  }
+  
+  .plusColors {
+    font-weight: 700;
+    animation: background-pan 2s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--pc1),
+      var(--pc2),
+      var(--pc3),
+      var(--pc1)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    whitespace: nowrap;
+    
+    font-size: var(--pss1);
+    
+    border-bottom: none;
+    transition: all 75ms ease-in-out;
+    
+    }

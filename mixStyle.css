@@ -38,7 +38,7 @@ section {
   /* scroll-snap-align: start; */
 }  
 
-/* literally just the scroll down to cont thing. such a waste of space ngl */
+/* scroll down to cont thing */
 h2 {
 color: white;
 font-family: "Space Mono", monospace;
@@ -599,8 +599,8 @@ background: linear-gradient(
   transparent 0% 33%, 
 
   rgb(145, 17, 17) 66%, 
-  rgb(192, 104, 104) 83.5%, 
-  rgb(172, 172, 172) 100%
+  rgb(195, 97, 97) 83.5%, 
+  rgb(155, 155, 155)100%
   );
 background-position: 0% 0%;
 background-size: 300% 300%;
@@ -692,7 +692,7 @@ background: linear-gradient(
   transparent 0% 33%, 
   rgb(74, 57, 83) 66%, 
   rgb(158, 108, 216) 83.5%, 
-  rgb(184, 184, 184) 100%
+  rgb(155, 155, 155)100%
 );
 background-position: 0% 0%;
 background-size: 300% 300%;
@@ -885,18 +885,18 @@ border-radius:50%;
 line-height:50px;
 }
 .popup .icon i.fa-solid {
-font-size:30px;
+font-size:1.5vw;
 color:#464646;
 } 
 .popup .title {
 margin:5px 0px;
-font-size:3rem;
+font-size:2vw;
 font-weight:600;
 color:rgb(116, 175, 180);
 }
 .popup .description {
 color:#222;
-font-size:1.25rem;
+font-size:1vw;
 font-weight: bold;
 padding:5px;
 }

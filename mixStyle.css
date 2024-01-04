@@ -86,7 +86,7 @@ h1 {
 text-align: center;
 }
 
-h1 > .love  {
+/* h1 > .love  {
 display: inline-block;
 position: relative;
 }
@@ -108,7 +108,7 @@ whitespace: nowrap;
 padding-top: 30px;
 
 padding-bottom: 30px;
-}
+} */
 
 /* background colors */
 .one {
@@ -363,7 +363,7 @@ main > article:nth-child(3) > .article-image-section {
 }
 
 main > article:nth-child(4) > .article-image-section {
-  background-image: url(images/float.PNG);
+  background-image: url(images/snippyai.PNG);
 }
 
 main > article > .article-image-section {

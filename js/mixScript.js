@@ -173,28 +173,28 @@ const handleRightClick = () => {
 }
 
 // color text love
-const love = document.querySelector(".activation");
+// const love = document.querySelector(".activation");
 
-love.onmouseenter = () => {
-var r = document.querySelector(':root');
+// love.onmouseenter = () => {
+// var r = document.querySelector(':root');
 
 
-// Create a function for setting a variable value
+// // Create a function for setting a variable value
 
-  r.style.setProperty('--red', '#cc0000');
-  r.style.setProperty('--darkPink', '#ff4d4d');
-  r.style.setProperty('--pink', '#ff8080');
-  r.style.setProperty('--fourDefaultBg', 'white')
-}
+//   r.style.setProperty('--red', '#cc0000');
+//   r.style.setProperty('--darkPink', '#ff4d4d');
+//   r.style.setProperty('--pink', '#ff8080');
+//   r.style.setProperty('--fourDefaultBg', 'white')
+// }
 
-love.onmouseleave = onMouseLeave = () => {
-  var r = document.querySelector(':root');
+// love.onmouseleave = onMouseLeave = () => {
+//   var r = document.querySelector(':root');
   
-  r.style.setProperty('--red', 'white');
-  r.style.setProperty('--darkPink', 'white');
-  r.style.setProperty('--pink', 'white');
-  r.style.setProperty('--fourDefaultBg', '#393631')
-}
+//   r.style.setProperty('--red', 'white');
+//   r.style.setProperty('--darkPink', 'white');
+//   r.style.setProperty('--pink', 'white');
+//   r.style.setProperty('--fourDefaultBg', '#393631')
+// }
 
 // music card1
 const subtitle1 = document.getElementsByClassName("card-subtitle1")[0];

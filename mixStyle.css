@@ -351,11 +351,11 @@ main > article > .article-nav-section {
 }
 
 main > article:first-child > .article-image-section {
-  background-image: url(images/smile2.JPG);
+  background-image: url(images/ribbittemp.png);
 }
 
 main > article:nth-child(2) > .article-image-section {
-  background-image: url(images/hardwork.jpg);
+  background-image: url(images/quaketemp.png);
 }
 
 main > article:nth-child(3) > .article-image-section {

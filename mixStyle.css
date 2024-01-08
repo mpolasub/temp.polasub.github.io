@@ -363,7 +363,7 @@ main > article:nth-child(3) > .article-image-section {
 }
 
 main > article:nth-child(4) > .article-image-section {
-  background-image: url(images/snippyai.PNG);
+  background-image: url(images/snippyai.png);
 }
 
 main > article > .article-image-section {

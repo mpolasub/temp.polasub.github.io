@@ -172,30 +172,6 @@ const handleRightClick = () => {
   });
 }
 
-// color text love
-// const love = document.querySelector(".activation");
-
-// love.onmouseenter = () => {
-// var r = document.querySelector(':root');
-
-
-// // Create a function for setting a variable value
-
-//   r.style.setProperty('--red', '#cc0000');
-//   r.style.setProperty('--darkPink', '#ff4d4d');
-//   r.style.setProperty('--pink', '#ff8080');
-//   r.style.setProperty('--fourDefaultBg', 'white')
-// }
-
-// love.onmouseleave = onMouseLeave = () => {
-//   var r = document.querySelector(':root');
-  
-//   r.style.setProperty('--red', 'white');
-//   r.style.setProperty('--darkPink', 'white');
-//   r.style.setProperty('--pink', 'white');
-//   r.style.setProperty('--fourDefaultBg', '#393631')
-// }
-
 // music card1
 const subtitle1 = document.getElementsByClassName("card-subtitle1")[0];
 
@@ -262,22 +238,6 @@ const createSubtitle3 = text => text.split(" ").map(addWord3);
 createSubtitle3("Snowboarding\n Guitar\n Drums\n Mechanical- Keyboards\n Reading");
 
 
-// card1 text color change option (it doesnt actually work but if I ever wanna implement this i will work on it so im keeping this here lol)
-
-// const cardText = document.querySelector(".card1");
-
-// cardText.onmouseenter = () => {
-// var c1 = document.querySelector(':root');
-
-//   c1.style.setProperty('--c1Text', 'black');
-// }
-
-// cardText.onmouseleave = onMouseLeave = () => {
-//   var c1 = document.querySelector(':root');
-  
-//   c1.style.setProperty('--c1Text', 'white');
-// }
-
 
 // modal work for welcome
 document.getElementById("mainWel").style.cursor = "pointer";
@@ -304,23 +264,17 @@ document.getElementById("dismiss-popup-btn").addEventListener("click",function()
 const link = document.querySelector(".myLink");
 
 link.onmouseenter = () => {
-var r1 = document.querySelector(':root');
+  var r1 = document.querySelector(':root');
 
-//   sunset variation
-  // r1.style.setProperty('--red1', '#fce38a');
-  // r1.style.setProperty('--darkPink1', '#fc8181');
-  // r1.style.setProperty('--pink1', '#ff8080');
+  // default variation
+  r1.style.setProperty('--red1', 'mediumpurple');
+  r1.style.setProperty('--darkPink1', 'white');
+  r1.style.setProperty('--pink1', 'mediumslateblue');
 
-// default variation
-r1.style.setProperty('--red1', 'mediumpurple');
-r1.style.setProperty('--darkPink1', 'white');
-r1.style.setProperty('--pink1', 'mediumslateblue');
+  r1.style.setProperty('--pc1', 'mediumpurple');
+  r1.style.setProperty('--pc2', 'white');
+  r1.style.setProperty('--pc3', 'mediumslateblue');
 
-r1.style.setProperty('--pc1', 'mediumpurple');
-r1.style.setProperty('--pc2', 'white');
-r1.style.setProperty('--pc3', 'mediumslateblue');
-
-  r1.style.setProperty('--fourDefaultBg', 'white')
   r1.style.setProperty('--pss', '4.5rem')
 
 }
@@ -336,7 +290,6 @@ link.onmouseleave = onMouseLeave = () => {
   r1.style.setProperty('--pc2', 'white');
   r1.style.setProperty('--pc3', 'white');
 
-  r1.style.setProperty('--fourDefaultBg', '#393631')
   r1.style.setProperty('--pss', '4rem')
 
 }
@@ -353,129 +306,117 @@ link.onmousedown = () => {
   r1.style.setProperty('--pc2', 'white');
   r1.style.setProperty('--pc3', 'white');
 
-	r1.style.setProperty('--fourDefaultBg', '#393631')
 	r1.style.setProperty('--pss', '4rem')
   
-  }
+}
 
 
-  // linkedin style
+// linkedin style
 
-  const link1 = document.querySelector(".myLink1");
+const link1 = document.querySelector(".myLink1");
 
-  link1.onmouseenter = () => {
+link1.onmouseenter = () => {
   var r2 = document.querySelector(':root');
-  
-  //   sunset variation
-    // r2.style.setProperty('--red1', '#fce38a');
-    // r2.style.setProperty('--darkPink1', '#fc8181');
-    // r2.style.setProperty('--pink1', '#ff8080');
-  
-    // default variation
-    r2.style.setProperty('--white1', 'white');
-    r2.style.setProperty('--lightBlue1', '#00A0DC');
-    r2.style.setProperty('--blue1', '#0077B5');
 
-    r2.style.setProperty('--pc1', 'white');
-    r2.style.setProperty('--pc2', '#00A0DC');
-    r2.style.setProperty('--pc3', '#0077B5');
-  
-    r2.style.setProperty('--fourDefaultBg', 'white')
-    r2.style.setProperty('--pss1', '4.5rem')
-  
-  }
-  
-  link1.onmouseleave = onMouseLeave = () => {
-    var r2 = document.querySelector(':root');
-  
-    r2.style.setProperty('--white1', 'white');
-    r2.style.setProperty('--lightBlue1', 'white');
-    r2.style.setProperty('--blue1', 'white');
+//   sunset variation
+  // r2.style.setProperty('--red1', '#fce38a');
+  // r2.style.setProperty('--darkPink1', '#fc8181');
+  // r2.style.setProperty('--pink1', '#ff8080');
 
-    r2.style.setProperty('--pc1', 'white');
-    r2.style.setProperty('--pc2', 'white');
-    r2.style.setProperty('--pc3', 'white');
+  // default variation
+  r2.style.setProperty('--white1', 'white');
+  r2.style.setProperty('--lightBlue1', '#00A0DC');
+  r2.style.setProperty('--blue1', '#0077B5');
 
-    r2.style.setProperty('--fourDefaultBg', '#393631')
-    r2.style.setProperty('--pss1', '4rem')
-  
-  }
-  
-  
-  link1.onmousedown = () => {
-    var r2 = document.querySelector(':root');
-  
-    r2.style.setProperty('--white1', 'white');
-    r2.style.setProperty('--lightBlue1', 'white');
-    r2.style.setProperty('--blue1', 'white');
+  r2.style.setProperty('--pc1', 'white');
+  r2.style.setProperty('--pc2', '#00A0DC');
+  r2.style.setProperty('--pc3', '#0077B5');
 
-    r2.style.setProperty('--pc1', 'white');
-    r2.style.setProperty('--pc2', 'white');
-    r2.style.setProperty('--pc3', 'white');
+  r2.style.setProperty('--pss1', '4.5rem')
 
-    r2.style.setProperty('--fourDefaultBg', '#393631')
-    r2.style.setProperty('--pss1', '4rem')
-    
-    }
-  
+}
+
+link1.onmouseleave = onMouseLeave = () => {
+  var r2 = document.querySelector(':root');
+
+  r2.style.setProperty('--white1', 'white');
+  r2.style.setProperty('--lightBlue1', 'white');
+  r2.style.setProperty('--blue1', 'white');
+
+  r2.style.setProperty('--pc1', 'white');
+  r2.style.setProperty('--pc2', 'white');
+  r2.style.setProperty('--pc3', 'white');
+
+  r2.style.setProperty('--pss1', '4rem')
+
+}
 
 
-    // email style
+link1.onmousedown = () => {
+  var r2 = document.querySelector(':root');
 
-    const link2 = document.querySelector(".myLink2");
+  r2.style.setProperty('--white1', 'white');
+  r2.style.setProperty('--lightBlue1', 'white');
+  r2.style.setProperty('--blue1', 'white');
 
-    link2.onmouseenter = () => {
-    var r3 = document.querySelector(':root');
-    
-    //   sunset variation
-      // r3.style.setProperty('--red1', '#fce38a');
-      // r3.style.setProperty('--darkPink1', '#fc8181');
-      // r3.style.setProperty('--pink1', '#ff8080');
-    
-      // default variation
-      r3.style.setProperty('--white2', 'white');
-      r3.style.setProperty('--lightRed1', '#D44638');
-      r3.style.setProperty('--realRed1', '#B23121');
+  r2.style.setProperty('--pc1', 'white');
+  r2.style.setProperty('--pc2', 'white');
+  r2.style.setProperty('--pc3', 'white');
+
+  r2.style.setProperty('--pss1', '4rem')
   
-      r3.style.setProperty('--pc1', 'white');
-      r3.style.setProperty('--pc2', '#D44638');
-      r3.style.setProperty('--pc3', '#B23121');
-    
-      r3.style.setProperty('--fourDefaultBg', 'white')
-      r3.style.setProperty('--pss2', '4.5rem')
-    
-    }
-    
-    link2.onmouseleave = onMouseLeave = () => {
-      var r3 = document.querySelector(':root');
-    
-      r3.style.setProperty('--white2', 'white');
-      r3.style.setProperty('--lightRed1', 'white');
-      r3.style.setProperty('--realRed1', 'white');
+}
+
+
+
+// email style
+
+const link2 = document.querySelector(".myLink2");
+
+link2.onmouseenter = () => {
+  var r3 = document.querySelector(':root');
+
+
+  // default variation
+  r3.style.setProperty('--white2', 'white');
+  r3.style.setProperty('--lightRed1', '#D44638');
+  r3.style.setProperty('--realRed1', '#B23121');
+
+  r3.style.setProperty('--pc1', 'white');
+  r3.style.setProperty('--pc2', '#D44638');
+  r3.style.setProperty('--pc3', '#B23121');
+
+  r3.style.setProperty('--pss2', '4.5rem')
+
+}
+
+link2.onmouseleave = onMouseLeave = () => {
+  var r3 = document.querySelector(':root');
+
+  r3.style.setProperty('--white2', 'white');
+  r3.style.setProperty('--lightRed1', 'white');
+  r3.style.setProperty('--realRed1', 'white');
+
+  r3.style.setProperty('--pc1', 'white');
+  r3.style.setProperty('--pc2', 'white');
+  r3.style.setProperty('--pc3', 'white');
+
+  r3.style.setProperty('--pss2', '4rem')
+
+}
+
+
+link2.onmousedown = () => {
+  var r3 = document.querySelector(':root');
+
+  r2.style.setProperty('--white2', 'white');
+  r2.style.setProperty('--lightRed1', 'white');
+  r2.style.setProperty('--realRed1', 'white');
+
+  r3.style.setProperty('--pc1', 'white');
+  r3.style.setProperty('--pc2', 'white');
+  r3.style.setProperty('--pc3', 'white');
+
+  r3.style.setProperty('--pss2', '4rem')
   
-      r3.style.setProperty('--pc1', 'white');
-      r3.style.setProperty('--pc2', 'white');
-      r3.style.setProperty('--pc3', 'white');
-  
-      r3.style.setProperty('--fourDefaultBg', '#393631')
-      r3.style.setProperty('--pss2', '4rem')
-    
-    }
-    
-    
-    link2.onmousedown = () => {
-      var r3 = document.querySelector(':root');
-    
-      r2.style.setProperty('--white2', 'white');
-      r2.style.setProperty('--lightRed1', 'white');
-      r2.style.setProperty('--realRed1', 'white');
-  
-      r3.style.setProperty('--pc1', 'white');
-      r3.style.setProperty('--pc2', 'white');
-      r3.style.setProperty('--pc3', 'white');
-  
-      r3.style.setProperty('--fourDefaultBg', '#393631')
-      r3.style.setProperty('--pss2', '4rem')
-      
-      }
-    
+}

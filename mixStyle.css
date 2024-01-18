@@ -27,6 +27,28 @@ to {
 }
 }
 
+
+.ghlink {
+  text-decoration: none;
+}
+
+.ghlink > a {
+  color: rgba(255, 255, 255, 0.709);
+  font-size: 1.25em;
+  font-family: 'Space Mono', monospace;
+  text-decoration: underline;
+  text-decoration-color: #b9b9b9;
+}
+
+.ghlink > a:hover {
+  text-decoration: none;
+  background: #b9b9b9;
+  color: #0c0c0c;
+  border-radius: 0%;
+  transition: 450ms ease;
+
+}
+
 section {
   height: 100vh;
   /* width: 100vw; */
@@ -1431,7 +1453,7 @@ transition: all 300ms ease-in-out 400ms;
 }
 /* modal work ends */
 
-a { text-decoration: none; border-bottom:3px solid rgb(0, 0, 0); }
+a { text-decoration: none; }
 
 /* github style */
 .myLink {

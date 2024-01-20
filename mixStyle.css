@@ -5,6 +5,21 @@
   font-family: sans-serif;
 }
 
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(43, 40, 33);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bebebe;
+  border-radius: 0px;
+  border: 2px outset #757575;
+}
+
 @font-face {
 font-family: 'black_mangoregular';
 src: url('blackmango-regular-webfont.woff2') format('woff2'),
@@ -149,7 +164,7 @@ background: var(--fourDefaultBg)
 background-color: rgb(38, 37, 29);
 }
 .log {
-background-color: rgb(37, 36, 29);
+background-color: rgb(48, 46, 37);
 }
 
 #heading {
@@ -965,271 +980,7 @@ transition: all 300ms ease-in-out 400ms;
 /* modal work ends */
 
 
-/* music player fr */
-.content{
-width: 350px;
-border-radius: 15px;
-padding: 25px 30px;
-}
-
-.material-symbols-rounded{
-cursor: pointer;
-}
-
-
-.music-image{
-width: 230px;
-height: 230px;
-margin-top: 25px;
-padding: 7px;
-}
-
-.music-image img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-
-.image-wrapper{
-display: flex;
-justify-content: center;
-}
-
-.music-titles{
-text-align: center;
-margin: 30px 0;
-color: #4d4d4d;
-}
-
-.music-titles .name{
-font-size: 19px;
-}
-
-.music-titles .artist{
-font-size: 17px;
-margin-top: 3px;
-opacity: 0.9;
-}
-
-.progress-details{
-width: 100%;
-height: 6px;
-background-color: #b7b5b5;
-border-radius: 15px;
-}
-
-.progress-bar{
-width: 0%;
-height: inherit;
-border-radius: inherit;
-background-color: #ffffff;
-cursor: pointer;
-position: relative;
-}
-
-.progress-bar span{
-position: absolute;
-width: 12px;
-height: 12px;
-background-color: #ffffff;
-border-radius: inherit;
-transform: translateY(-25%);
-right: -5px;
-opacity: 0;
-transition: opacity 0.3s ease-out;
-}
-
-.progress-details:hover .progress-bar span{
-opacity: 1;
-}
-
-.time{
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-top: 2px;
-color: #4d4d4d;
-}
-
-.control-btn{
-margin-top: 50px;
-margin-bottom: 20px;
-width: 220px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-transform: translateX(35px);
-}
-
-.control-btn span{
-width: 45px;
-height: 45px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #ffffff;
-}
-
-.control-btn span:active{
-color: #ffffff44
-}
-
-/* music player ends */
-
-
-/* game page */
-
-.six {
-background-color: rgb(43, 42, 37);
-}
-
-
-/* edit this into percent?? */
-#maze {
-position: absolute;
-width: 340px;
-height: 240px;
-
-top: 30vh;
-left: 50%;
-transform: translate(-50%, 500vh);
-}
-
-.mbox,
-.controls {
-height: 100%;
-background: rgb(43, 42, 37);
-display: grid;
-}
-
-
-/* edit this into percent?? */
-.buttons {
-width: 210px;
-height: 140px;
-background: rgb(43, 42, 37);;
-align-self: center;
-justify-self: center;
-display: grid;
-grid-template-rows: 70px 70px;
-grid-template-columns: 70px 70px 70px;
-transform: translateY(165px);
-}
-
-.btn {
-width: 60px;
-height: 60px;
-border: 2px #fff solid;
-border-bottom: 2px #fff solid;
-align-self: center;
-justify-self: center;
-cursor: pointer;
-border-radius: 8px;
-display: grid;
-}
-.chevron {
-height: 20px;
-width: 20px;
-align-self: center;
-justify-self: center;
-color: #222;
-font-size: 20px;
-line-height: 20px;
-text-align: center;
-color: #fff;
-}
-
-#bu {
-grid-column-start: 2;
-}
-#bd {
-grid-column-start: 2;
-grid-row-start: 2;
-}
-#bl {
-grid-column-start: 1;
-grid-row-start: 2;
-}
-#br {
-grid-column-start: 3;
-grid-row-start: 2;
-}
-
-#thingie,
-#home {
-position: absolute;
-top: 100px;
-left: 100px;
-width: 20px;
-height: 20px;
-border-radius: 20px;
-/*background: #39a;
-transition: all .1s;*/
-}
-
-.emo {
-position: absolute;
-top: 4px;
-left: 1px;
-width: 13px;
-height: 13px;
-border-radius: 20px;
-font-size: 15px;
-line-height: 15px;
-text-align: left;
-}
-
-.barrier {
-position: absolute;
-background: #fff;
-}
-
-#top {
-top: 20px;
-left: 20px;
-width: 300px;
-height: 2px;
-}
-
-#bottom {
-top: 220px;
-left: 20px;
-width: 302px;
-height: 2px;
-}
-
-/*style reset*/
-button {
-display: inline-block;
-border: none;
-padding: none;
-margin: 0;
-outline: none;
--webkit-appearance: none;
--moz-appearance: none;
-background: none;
--webkit-tap-highlight-color: transparent;
-}
-
-button:hover,
-button:focus {
--webkit-appearance: none;
-}
-
-button:focus {
-outline: none;
-}
-
-button:active {
-transform: scale(1);
--webkit-appearance: none;
-}
-
-
-
-
-/* game end modal work */
+/* potential modal work for exp*/
 
 .center1 {
 position:absolute;

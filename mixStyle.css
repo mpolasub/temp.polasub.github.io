@@ -922,20 +922,21 @@ border-radius:50%;
 line-height:50px;
 }
 .popup .icon i.fa-solid {
-font-size:1.5vw;
+font-size:clamp(12px, 1.5vw, 32px);
 color:#464646;
 } 
 .popup .title {
 margin:5px 0px;
-font-size:2vw;
+font-size:clamp(14px, 2vw, 34px);
 font-weight:600;
+padding:0.5vh;
 color:rgb(116, 175, 180);
 }
 .popup .description {
 color:#222;
-font-size:1vw;
+font-size:clamp(10px, 1vw, 20px);
 font-weight: bold;
-padding:5px;
+padding:1vh;
 }
 .popup .dismiss-btn {
 margin-top:15px;
@@ -945,7 +946,7 @@ padding:10px 20px;
 background:#111;
 color:#f5f5f5;
 border:2px solid #111;
-font-size:16px;
+font-size:clamp(10px, 1vw, 20px);
 font-weight:600;
 outline:none;
 border-radius:10px;

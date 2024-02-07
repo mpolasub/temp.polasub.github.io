@@ -213,7 +213,7 @@ const addWord2 = (text, index) => subtitle2.appendChild(createWord2(text, index)
 
 const createSubtitle2 = text => text.split(" ").map(addWord2);
 
-createSubtitle2("Firebase\n Git\n    GitHub\n Flask\n   JUnit\n    SQLite\n    Shiny");
+createSubtitle2("Firebase\n Git\n    GitHub\n Flask\n   JUnit\n    SQLite\n    Selenium Shiny");
 
 
 // music card3

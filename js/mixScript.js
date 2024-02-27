@@ -191,7 +191,7 @@ const addWord1 = (text, index) => subtitle1.appendChild(createWord1(text, index)
 
 const createSubtitle1 = text => text.split(" ").map(addWord1);
 
-createSubtitle1("Java\n Python\n HTML\n    CSS\n JavaScript\n R     \nEnglish");
+createSubtitle1("Java\n Python\n JavaScript\n R     \nEnglish");
 
 
 // music card2

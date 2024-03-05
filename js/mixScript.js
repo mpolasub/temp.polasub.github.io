@@ -1,87 +1,43 @@
 // welcome text effect + the scroll down thing logic
 const track = document.getElementById("image-track");
 const blob = document.getElementById("blob");
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-const letters1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-let interval = null;
-let interval1 = null;
-
-document.querySelector("h3").onmouseover = event => {  
-  let iteration = 0;
+const enhance = id => {
+  const element = document.getElementById(id),
+        text = element.innerText.split("");
   
-  clearInterval(interval);
+  element.innerText = "";
   
-  interval = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration) {
-          return event.target.dataset.value[index];
-        }
-      
-        return letters[Math.floor(Math.random() * 26)]
-      })
-      .join("");
+  text.forEach((value, index) => {
+    const outer = document.createElement("span");
     
-    if(iteration >= event.target.dataset.value.length){ 
-      clearInterval(interval);
-    }
+    outer.className = "outer";
     
-    iteration += 1 / 3;
-  }, 30);
+    const inner = document.createElement("span");
+    
+    inner.className = "inner";
+    
+    inner.style.animationDelay = `${rand(-5000, 0)}ms`;
+    
+    const letter = document.createElement("span");
+    
+    letter.className = "letter";
+    
+    letter.innerText = value;
+    
+    letter.style.animationDelay = `${index * 1000 }ms`;
+    
+    inner.appendChild(letter);    
+    
+    outer.appendChild(inner);    
+    
+    element.appendChild(outer);
+  });
 }
 
-document.querySelector("h2").onmouseover = event => {  
-  let iteration1 = 0;
-  
-  clearInterval(interval1);
-  
-  interval1 = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration1) {
-          return event.target.dataset.value[index];
-        }
-      
-        return letters1[Math.floor(Math.random() * 26)]
-      })
-      .join("");
-    
-    if(iteration1 >= event.target.dataset.value.length){ 
-      clearInterval(interval1);
-    }
-    
-    iteration1 += 1 / 3;
-  }, 5);
-}
-
-document.querySelector("h2").onmouseout = event => {  
-  let iteration1 = 0;
-  
-  clearInterval(interval1);
-  
-  interval1 = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration1) {
-          return "scroll DOWN to continue"[index];
-        }
-      
-        return letters1[Math.floor(Math.random() * 26)]
-      })
-      .join("");
-    
-    if(iteration1 >= event.target.dataset.value.length){ 
-      clearInterval(interval1);
-    }
-    
-    iteration1 += 1 / 3;
-  }, 10);
-}
+enhance("my-name");
 
 // mouse pointer blob logic
 document.body.onpointermove = event => {
@@ -242,12 +198,21 @@ createSubtitle3("Snowboarding\n Guitar\n Drums\n Mechanical- Keyboards\n Reading
 // modal work for welcome
 document.getElementById("mainWel").style.cursor = "pointer";
 
+
 document.getElementById("mainWel").addEventListener("click",function(){
-  document.getElementById("mainWel").style.display = "none";
-  document.getElementsByClassName("popup")[0].classList.add("active");
+  document.getElementById("mainWel").style = "pointer-events: none; background-color: rgba(0,0,0,0); color: white; transform: scale(35); transition: 850ms ease;";
+
+  
+  setTimeout(function(){
+    document.getElementById("mainWel").style.display = "none";
+    document.getElementsByClassName("popup")[0].classList.add("active");
+  },500)
+
+
 });
  
 document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+  document.getElementById("mainWel").style = "background-color: rgba(0,0,0,0); color: white; transform: scale(1); transition: 1250ms ease;";
   document.getElementById("mainWel").style.display = "block";
   document.getElementsByClassName("popup")[0].classList.remove("active");
 });

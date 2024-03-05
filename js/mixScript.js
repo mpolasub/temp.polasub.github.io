@@ -196,8 +196,6 @@ createSubtitle3("Snowboarding\n Guitar\n Drums\n Mechanical- Keyboards\n Reading
 
 
 // modal work for welcome
-document.getElementById("mainWel").style.cursor = "pointer";
-
 
 document.getElementById("mainWel").addEventListener("click",function(){
   document.getElementById("mainWel").style = "pointer-events: none; background-color: rgba(0,0,0,0); color: white; transform: scale(35); transition: 850ms ease;";

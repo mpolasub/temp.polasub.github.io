@@ -1243,6 +1243,7 @@ transition: all 75ms ease-in-out;
   h3:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
   }
 
   h3:active {
@@ -1266,6 +1267,7 @@ transition: all 75ms ease-in-out;
   .fancy span > .letter {
     font-family: "Space Mono", monospace;
     font-weight: bold;
+    user-select: none;
   }
 
 

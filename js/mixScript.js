@@ -198,8 +198,8 @@ createSubtitle3("Snowboarding\n Guitar\n Drums\n Mechanical- Keyboards\n Reading
 // modal work for welcome
 
 document.getElementById("mainWel").addEventListener("click",function(){
-  document.getElementById("mainWel").style = "pointer-events: none; background-color: rgba(0,0,0,0); color: white; transform: scale(35); transition: 850ms ease;";
-
+  document.getElementById("mainWel").style = "pointer-events: none; background-color: rgba(0,0,0,0); color: white; transform: scale(60); transition: 1372ms ease;";
+  document.getElementsByClassName("popup2")[0].classList.remove("active");
   
   setTimeout(function(){
     document.getElementById("mainWel").style.display = "none";
@@ -218,7 +218,14 @@ document.getElementById("dismiss-popup-btn").addEventListener("click",function()
 
 
 
-	
+	// modal work for page menu
+document.getElementsByClassName("popup2")[0].classList.add("active");
+
+ 
+document.getElementById("dismiss-popup-btn2").addEventListener("click",function(){
+  document.getElementsByClassName("popup2")[0].classList.remove("active");
+});
+// modal work ends
 
 
 

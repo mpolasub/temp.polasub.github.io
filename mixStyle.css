@@ -376,18 +376,24 @@ main > article > .article-nav-section {
 }
 
 main > article:first-child > .article-image-section {
-  background-image: url(images/ribbittemp.png);
-}
-
-main > article:nth-child(2) > .article-image-section {
-  background-image: url(images/quaketemp.png);
-}
-
-main > article:nth-child(3) > .article-image-section {
   background-image: url(images/fun.PNG);
 }
 
+main > article:nth-child(2) > .article-image-section {
+  background-image: url(images/ribbittemp.png);
+
+}
+
+main > article:nth-child(3) > .article-image-section {
+  background-image: url(images/quaketemp.png);
+
+}
+
 main > article:nth-child(4) > .article-image-section {
+  background-image: url(images/snippyai.png);
+}
+
+main > article:nth-child(5) > .article-image-section {
   background-image: url(images/snippyai.png);
 }
 
@@ -899,7 +905,7 @@ top:50%;
 transform:translate(-50%,-50%) scale(1);
 transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
 }
-.popup .icon {
+/* .popup .icon {
 margin:1px 0px;
 width:clamp(16px, 4vw, 50px);
 height:clamp(16px, 4vw, 50px);
@@ -908,10 +914,11 @@ text-align:center;
 display:inline-block;
 border-radius:50%;
 line-height:50px;
-}
+} */
 .popup .icon i.fa-solid {
-font-size:clamp(12px, 3.5vw, 32px);
+font-size:clamp(8px, 4.25vh, 40px);
 color:#464646;
+padding:0.5vh;
 } 
 .popup .title {
 margin-bottom:clamp(8px, 1vw, 12px);
@@ -922,7 +929,7 @@ color:rgb(116, 175, 180);
 }
 .popup .description {
 color:#2f2f2f;
-font-size:clamp(10px, 1vw, 20px);
+font-size:clamp(8px, 1vw, 20px);
 font-weight: bold;
 padding:1vh;
 }
@@ -930,7 +937,7 @@ padding:1vh;
 margin-top:15px;
 }
 .popup .dismiss-btn button {
-padding:10px 20px;
+padding:clamp(5px, 1.35vh, 20px) 20px;
 background:#111;
 color:#f5f5f5;
 border:2px solid #111;
@@ -1109,24 +1116,24 @@ a { text-decoration: none; }
 
 /* github style */
 .myLink {
-font-weight: 700;
-animation: background-pan 2s linear infinite;
-background: linear-gradient(
-  to right,
-  var(--red1),
-  var(--darkPink1),
-  var(--pink1),
-  var(--red1)
-);
-background-size: 200%;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-whitespace: nowrap;
+  font-weight: 700;
+  animation: background-pan 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--red1),
+    var(--darkPink1),
+    var(--pink1),
+    var(--red1)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  whitespace: nowrap;
 
-font-size: var(--pss);
+  font-size: var(--pss);
 
-border-bottom: none;
-transition: all 75ms ease-in-out;
+  border-bottom: none;
+  transition: all 75ms ease-in-out;
 
 }
 
@@ -1152,7 +1159,7 @@ transition: all 75ms ease-in-out;
   border-bottom: none;
   transition: all 75ms ease-in-out;
   
-  }
+}
 
 
   /* email style */
@@ -1176,60 +1183,68 @@ transition: all 75ms ease-in-out;
   border-bottom: none;
   transition: all 75ms ease-in-out;
   
+}
+  
+.plusColors {
+  font-weight: 700;
+  animation: background-pan 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--pc1),
+    var(--pc2),
+    var(--pc3),
+    var(--pc1)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  whitespace: nowrap;
+  
+  font-size: var(--pss1);
+  
+  border-bottom: none;
+  transition: all 75ms ease-in-out;
+  
+}
+
+
+.contact {
+  transition: 0.2s ease;
+}
+  
+.contact:hover {
+  transform:scale(1.25)
+}
+
+
+
+
+@keyframes float {
+  from, to {
+    transform: translateY(5%);
   }
   
-  .plusColors {
-    font-weight: 700;
-    animation: background-pan 2s linear infinite;
-    background: linear-gradient(
-      to right,
-      var(--pc1),
-      var(--pc2),
-      var(--pc3),
-      var(--pc1)
-    );
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    whitespace: nowrap;
-    
-    font-size: var(--pss1);
-    
-    border-bottom: none;
-    transition: all 75ms ease-in-out;
-    
-    }
+  50% {    
+    transform: translateY(-5%);
+  }
+}
 
+    
+.fancy span {
+  display: inline-block;
+}
 
+.fancy > .outer {
+  transition: transform 350ms ease;
+}
 
+.fancy:hover > .outer {
+  transition-duration: 800ms;
+}
 
-
-    @keyframes float {
-      from, to {
-        transform: translateY(5%);
-      }
-      
-      50% {    
-        transform: translateY(-5%);
-      }
-    }
-    
-    
-    .fancy span {
-      display: inline-block;
-    }
-    
-    .fancy > .outer {
-      transition: transform 350ms ease;
-    }
-    
-    .fancy:hover > .outer {
-      transition-duration: 800ms;
-    }
-    
-    .fancy:hover > .outer > .inner {
-      animation: float 5s ease infinite;
-    }
+.fancy:hover > .outer > .inner {
+  animation: float 5s ease infinite;
+}
 
     /* welcome styling */
   #h3 {

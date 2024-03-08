@@ -227,7 +227,47 @@
             <section class="side">
               <h1 id="ref5"></h1>
                 <main>
-                    <article data-index="0" data-status="active">
+                  <article data-index="0" data-status="active">    
+                    <!-- image section -->
+                      <div class="article-image-section article-section">
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lTlrCqjfAFc?si=m4hpKZGX4-n3d3BS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    <!-- article description -->
+                      <div class="article-description-section article-section">
+                        <h6>Canvas HW Collector</h6>
+                        <br>
+                        <p>A GUI app for students to transfer their assignments from Canvas to a CSV<br>&#40;skip to 0:57 for the demo&#41;</p>
+                        <br>
+                        <span class="ghlink">
+                          <a href="https://github.com/mpolasub/canvas-homework-tracker">GitHub</a>
+                          <span style="color: rgba(255, 255, 255, 0.709); font-size: 1.25em; font-family: 'Space Mono', monospace;">|</span>
+                          <a href="/downloadables/canvasHomeworkCollector_WINDOWS_1.5_setup.exe" download>Download</a>
+                        </span>
+                        <p>Tools: Python, Selenium, Pandas, CTk</p>
+                      </div>
+                    <!-- title -->
+                      <div class="article-title-section article-section">
+                          <p style="font-size: clamp(1rem, 1vw, 2rem);">
+                            This Python web automation project uses Selenium to traverse through all of the "Assignments" pages on Canvas for each course  
+                            (in the specified quarter) that the user is enrolled in, and collects the assignment data to format into a CSV file using Pandas. 
+                            This app was packaged using PyInstaller and the installer was created using Inno Setup.
+                            I used CustomTkinter to build the front-end, and Canva to design the graphics. Please watch the video to see why I made this project!
+                          </p>
+                        <i class="fa-light fa-plus-large"></i>
+                      </div>
+                    <!-- nav buttons -->
+                      <div class="article-nav-section article-section">
+                        <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                          <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                      </div>
+                    </article>
+
+
+                    <article data-index="1" data-status="inactive">
                     <!-- image section -->
                       <div class="article-image-section article-section"></div>
                      <!-- article description -->
@@ -243,7 +283,7 @@
                     </div>
                   <!-- title -->
                     <div class="article-title-section article-section">
-                        <p style="font-size: 100%;">
+                        <p style="font-size: clamp(1rem, 1vw, 2rem);">
                           Ribbit adopts an object oriented design approach and utilizes Firebase backend features such as authentication, realtime database, and storage to allow users 
                           to create Ribbit accounts and share posts online. Users are also able to view their profile and upload profile 
                           pictures. Along with the ability to share media, Ribbit allows the user to select a "mood" to go along with a post. 
@@ -263,7 +303,7 @@
                       </div>
                     </article>
             
-                    <article data-index="1" data-status="inactive">    
+                    <article data-index="2" data-status="inactive">    
                     <!-- image section -->
                       <div class="article-image-section article-section"></div>
                     <!-- article description -->
@@ -279,7 +319,7 @@
                       </div>
                     <!-- title -->
                       <div class="article-title-section article-section">
-                          <p style="font-size: 100%;">
+                          <p style="font-size: clamp(1rem, 1vw, 2rem);">
                             QuakeUP fetches the latest earthquake data of the past 7 days from the United States Geological Survey (USGS) earthquake API
                             and represents the data visually using the Google Maps API and its built-in markers. Users can easily navigate and zoom in on the map to see earthquake locations, magnitudes, and date.
                             Each earthquake event can be clicked on to display further comprehensive details including depth, geographic coordinates, and time of occurrence. 
@@ -298,32 +338,32 @@
                       </div>
                     </article>
             
-                    <article data-index="2" data-status="inactive">    
+                    <article data-index="3" data-status="inactive">    
                     <!-- image section -->
                       <div class="article-image-section article-section">
                         <iframe width="100%" height="auto" src="https://www.youtube.com/embed/8wvp1l7el44?si=NynMXBtpxWDyomoh&amp;start=40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     <!-- article description -->
-                    <div class="article-description-section article-section">
-                      <h6>Munchies</h6>
-                      <br>
-                      <p>Online platform for users to share their cultural recipes with the internet <br>(1st place finish)</p>
-                      <br>
-                      <span class="ghlink">
-                        <a href="https://github.com/RachelFeng924/MunchiesForMinorities-">GitHub</a>
-                      </span>
-                      <p>Tools: HTML, Python, Django, Bulma</p>
-                    </div>
-                  <!-- title -->
-                    <div class="article-title-section article-section">
-                        <p style="font-size: 100%;">
-                          Inspired by a feeling of cultural disconnect, my hackathon team decided to create a web application to help people of various ethnicities find 
-                          cooking recipes that are close/related to their culture. Munchies allows users to create accounts and post recipes that they would like to 
-                          digitally share in a Twitter-like format. Users are also able to view profiles of other users and discover new recipies. This  
-                          project was made by myself, Skyler Sun, Elle Yamamoto, and Rachel Feng. 
-                        </p>
-                      <i class="fa-light fa-plus-large"></i>
-                    </div>
+                      <div class="article-description-section article-section">
+                        <h6>Munchies</h6>
+                        <br>
+                        <p>Online platform for users to share their cultural recipes with the internet <br>(1st place finish)</p>
+                        <br>
+                        <span class="ghlink">
+                          <a href="https://github.com/RachelFeng924/MunchiesForMinorities-">GitHub</a>
+                        </span>
+                        <p>Tools: HTML, Python, Django, Bulma</p>
+                      </div>
+                    <!-- title -->
+                      <div class="article-title-section article-section">
+                          <p style="font-size: clamp(1rem, 1vw, 2rem);">
+                            Inspired by a feeling of cultural disconnect, my hackathon team decided to create a web application to help people of various ethnicities find 
+                            cooking recipes that are close/related to their culture. Munchies allows users to create accounts and post recipes that they would like to 
+                            digitally share in a Twitter-like format. Users are also able to view profiles of other users and discover new recipies. This  
+                            project was made by myself, Skyler Sun, Elle Yamamoto, and Rachel Feng. 
+                          </p>
+                        <i class="fa-light fa-plus-large"></i>
+                      </div>
                     <!-- nav buttons -->
                       <div class="article-nav-section article-section">
                         <button class="article-nav-button" type="button" onclick="handleLeftClick()">
@@ -335,7 +375,7 @@
                       </div>
                     </article>
             
-                    <article data-index="3" data-status="inactive">    
+                    <article data-index="4" data-status="inactive">    
                     <!-- image section -->
                       <div class="article-image-section article-section"></div>
                     <!-- article description -->
@@ -381,9 +421,9 @@
               <h1 id="ref7"></h1>
 
               <h6>
-                <a href="mailto:nondhawit@gmail.com" class="myLink2" style="padding-bottom: 2rem; margin: 0 auto; display:block; text-align: center">Email</a>
-                <a href="https://github.com/mpolasub" class="myLink" style="padding-bottom: 2rem; margin: 0 auto; display:block; text-align: center">GitHub</a>
-                <a href="https://www.linkedin.com/in/mpolasub/" class="myLink1" style="margin: 0 auto; display:block; text-align: center">LinkedIn</a>
+                <a href="mailto:nondhawit@gmail.com" class="myLink2 contact" style="padding-bottom: 2rem; margin: 0 auto; display:block; text-align: center">Email</a>
+                <a href="https://github.com/mpolasub" class="myLink contact" style="padding-bottom: 2rem; margin: 0 auto; display:block; text-align: center">GitHub</a>
+                <a href="https://www.linkedin.com/in/mpolasub/" class="myLink1 contact" style="margin: 0 auto; display:block; text-align: center">LinkedIn</a>
 
               </h6>
 

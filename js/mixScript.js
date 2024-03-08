@@ -50,11 +50,13 @@ document.body.onpointermove = event => {
 }
 
 // img track logic
-window.addEventListener('scroll', () => {
-	const scrollable = document.documentElement.scrollHeight - window.innerHeight
-	const scrolled = window.scrollY;
-	console.log(scrolled)
-});
+
+
+// window.addEventListener('scroll', () => {
+// 	const scrollable = document.documentElement.scrollHeight - window.innerHeight
+// 	const scrolled = window.scrollY;
+// 	console.log(scrolled)
+// });
 
 
 window.onmousedown = e => {
@@ -221,10 +223,7 @@ document.getElementById("dismiss-popup-btn").addEventListener("click",function()
 	// modal work for page menu
 document.getElementsByClassName("popup2")[0].classList.add("active");
 
- 
-document.getElementById("dismiss-popup-btn2").addEventListener("click",function(){
-  document.getElementsByClassName("popup2")[0].classList.remove("active");
-});
+
 // modal work ends
 
 
@@ -245,7 +244,7 @@ link.onmouseenter = () => {
   r1.style.setProperty('--pc2', 'white');
   r1.style.setProperty('--pc3', 'mediumslateblue');
 
-  r1.style.setProperty('--pss', '4.5rem')
+  // r1.style.setProperty('--pss', '4.5rem')
 
 }
 
@@ -260,7 +259,7 @@ link.onmouseleave = onMouseLeave = () => {
   r1.style.setProperty('--pc2', 'white');
   r1.style.setProperty('--pc3', 'white');
 
-  r1.style.setProperty('--pss', '4rem')
+  // r1.style.setProperty('--pss', '4rem')
 
 }
 
@@ -276,7 +275,7 @@ link.onmousedown = () => {
   r1.style.setProperty('--pc2', 'white');
   r1.style.setProperty('--pc3', 'white');
 
-	r1.style.setProperty('--pss', '4rem')
+	// r1.style.setProperty('--pss', '4rem')
   
 }
 
@@ -302,7 +301,7 @@ link1.onmouseenter = () => {
   r2.style.setProperty('--pc2', '#00A0DC');
   r2.style.setProperty('--pc3', '#0077B5');
 
-  r2.style.setProperty('--pss1', '4.5rem')
+  // r2.style.setProperty('--pss1', '4.5rem')
 
 }
 
@@ -317,7 +316,7 @@ link1.onmouseleave = onMouseLeave = () => {
   r2.style.setProperty('--pc2', 'white');
   r2.style.setProperty('--pc3', 'white');
 
-  r2.style.setProperty('--pss1', '4rem')
+  // r2.style.setProperty('--pss1', '4rem')
 
 }
 
@@ -333,7 +332,7 @@ link1.onmousedown = () => {
   r2.style.setProperty('--pc2', 'white');
   r2.style.setProperty('--pc3', 'white');
 
-  r2.style.setProperty('--pss1', '4rem')
+  // r2.style.setProperty('--pss1', '4rem')
   
 }
 
@@ -356,7 +355,7 @@ link2.onmouseenter = () => {
   r3.style.setProperty('--pc2', '#D44638');
   r3.style.setProperty('--pc3', '#B23121');
 
-  r3.style.setProperty('--pss2', '4.5rem')
+  // r3.style.setProperty('--pss2', '4.5rem')
 
 }
 
@@ -371,7 +370,7 @@ link2.onmouseleave = onMouseLeave = () => {
   r3.style.setProperty('--pc2', 'white');
   r3.style.setProperty('--pc3', 'white');
 
-  r3.style.setProperty('--pss2', '4rem')
+  // r3.style.setProperty('--pss2', '4rem')
 
 }
 
@@ -387,7 +386,7 @@ link2.onmousedown = () => {
   r3.style.setProperty('--pc2', 'white');
   r3.style.setProperty('--pc3', 'white');
 
-  r3.style.setProperty('--pss2', '4rem')
+  // r3.style.setProperty('--pss2', '4rem')
   
 }
 

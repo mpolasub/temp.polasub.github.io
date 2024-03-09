@@ -193,7 +193,7 @@ const addWord3 = (text, index) => subtitle3.appendChild(createWord3(text, index)
 
 const createSubtitle3 = text => text.split(" ").map(addWord3);
 
-createSubtitle3("Snowboarding\n Guitar\n Drums\n Mechanical- Keyboards\n Reading");
+createSubtitle3("Snowboarding\n Guitar\n Drums\n Mechanical- Keyboards\n Reading\n Video-Editing");
 
 
 

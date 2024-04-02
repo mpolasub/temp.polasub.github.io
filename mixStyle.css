@@ -136,6 +136,7 @@ padding-bottom: 30px;
 } */
 
 /* background colors */
+
 .one {
 background: rgb(43, 40, 33);
 }
@@ -154,6 +155,26 @@ background-color: rgb(38, 37, 29);
 .log {
 background-color: rgb(48, 46, 37);
 }
+
+/* .one {
+  background: rgb(43, 40, 33);
+  }
+  .two {
+  background: linear-gradient(rgb(43, 40, 33), rgb(81, 79, 73));
+  }
+  .three {
+  background:rgb(81, 79, 73);
+  }
+  .four {
+  background: linear-gradient(rgb(81, 79, 73), rgb(48, 45, 37));
+  }
+  .side {
+  background: rgb(48, 45, 37);
+  }
+  .log {
+  background: linear-gradient(rgb(48, 45, 37), rgb(90, 89, 84));
+  } */
+
 
 #heading {
   text-align: center;
